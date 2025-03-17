@@ -1,3 +1,7 @@
 # Ava Dunphy Python Portfolio 
 ## Purpose 🔨
-This file contains a variety of my works in data science, showcasing my projects using the python language. It includes some different programming techniques, data processing methods, and problem-solving approaches I've explored. I have up load a variety of my works as from my most recent attempts.
+This file contains a variety of my works in data science, showcasing my projects using the python language. It includes some different programming techniques, data processing methods, and problem-solving approaches I've explored. I have up load a variety of my works as from my most recent attempts. Below find some brief descriptions of my work, and they have complimented by overall learning experience. 
+
+## Titying Up Project! 🧹
+## What did I do? 
+# In this projected I looked at the 2008 Olympic Medalist data. Though the data was quite intresting and provided a signficant amount of information regarding which atheltes competed, if they recieved medals, and/or what medals they did recieve, the information was not organized. It would've been difficult to find more specific pieces of the data, or simply gain a better wholeistic understanding. In this projected, I used techinques such as ".melt()" or "str.replace()" to better organize the data and make it more presentable. In addition to this, I used bar and histogram plots to create visualations of the data, once again making it easier on the eye. Finally, I created a pivot plot which allowed me to compare different aspects of the data, looking closer at specific values and groups. Overall, this whole projected taught me how to dive deeper into data sheets, restructure them, and improve their visual appeal. 
