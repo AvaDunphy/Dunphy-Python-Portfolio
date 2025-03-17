@@ -1,2 +1,0 @@
-## Tyding Up the Olympic Gold Medalists of 2008! 🏆
-# In this project, I looked into a data set inlucding the athletes in the 2008 Olympics. However, the data that was presented to me was slightly messed up. Through a variety of techniques, so that the data could be easier presented to a viewer. Considering this overall goal, I employed techniques including . . .
