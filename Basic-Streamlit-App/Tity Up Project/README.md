@@ -1,9 +1,8 @@
-import matplotlib.image as mpimg
 ### Tidy the 'Untidy' Data with Me! 🧹
 
 
 ## Tyding Up the Olympic Gold Medalists of 2008! 🏆
-# In this project, I looked into a data set inlucding the athletes in the 2008 Olympics. However, the orginal data, was quite unkept. There were various collumns with different information. It was a struggle to try and read what the data was trying to show the audience. Therefore, through a variety of techniques, I decided to approach the data and tidy it up. Through using arguments such as ".melt()", ".str.strip()", ".astype", and ".str.split()", as well as including some graphs to better display the data, I was able to tidy up the formatting. This way, the readers (of the data), could gain a better wholeistic understanding of what the data was trying to protray. 
+# In this project, I looked into a data set inlucding the athletes in the 2008 Olympics. However, the orginal data, was quite unkept. There were various collumns with different information. It was a struggle to try and read what the data was trying to show the audience. Therefore, through a variety of techniques, I decided to approach the data and tidy it up. Through using arguments such as ".melt()", ".str.replace()", ".drop", and ".str.split()", as well as including some graphs to better display the data, I was able to tidy up the formatting. This way, the readers (of the data), could gain a better wholeistic understanding of what the data was trying to protray. 
 
 ## My Goal 🏅
 # Reorgnize the data provided, so that it is overall more pleasing to the audience.
@@ -17,13 +16,13 @@ import matplotlib.image as mpimg
 
 📸:
 
-# 2. ".str.strip()"
-# Secondly, to improve the visualzations of the data, I looked to get rid of spaces in the column names and values. I did so by using the '.str.strip()' code, allowing me to better tidy up the small erros. 
+# 2. "str.replace"
 
 📸: 
 
-# 3. ".astype" 
-# Thirdly, the funcation ".astype" allows for me to turn the Count (if it is stored as a string) into an integer, thus allowing for the code to count the medals. 
+# 3. ".drop"
+#
+
 
 📸: 
 
@@ -36,7 +35,7 @@ import matplotlib.image as mpimg
 ## Analysis of the Visulations 📑
 
 # Histogram Plot 📈
-# This histogram takes a look at the medal counts by type of medal. Allowing for me to get a better look at the different countries affect the medal distribution.
+# 
 📸: 
 
 # Barplot 📊
@@ -44,3 +43,4 @@ import matplotlib.image as mpimg
 📸:
 
 ## Pivot Table
+#
