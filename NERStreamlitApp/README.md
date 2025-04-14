@@ -3,8 +3,12 @@
 ### Project Overview 📖
 This app provides users with the opprotunity to look further into Named Entity Recognition, employing spaCy and Streamlit to enhance entity patterns, upload text, and organize highlighted entities. In this project, I establish my own patterns, definitions, and forms, through the use of if statements, label, pattern, and additional entities. 
 
-### How To 🔍
- Upload desired text, add entitied labels and patterns. See what the rest of the code does! 
+### Step by Step Process! 🥇🥈🥉
+
+**What to do:**
+1. Write your own text in the text box **or** upload a `.txt` file.
+2. Specify the custom **label** and **pattern** you are looking for.
+3. Click **Run NER** to highlight entities instantly!
 
 ## App Features 
 * spaCy 
