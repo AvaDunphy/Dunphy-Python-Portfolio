@@ -12,16 +12,19 @@ Original file is located at
 
 !pip install spacy
 !pip install streamlit
+!python -m spacy download en_core_web_sm
 
 import streamlit as st
 import spacy
 from spacy.pipeline import EntityRuler
 from spacy import displacy
+nlp = spacy.load('en_core_web_sm')
 
 nlp = spacy.blank('en')
 
 """First, I need to load a base model under spaCy"""
 
+# Additional side bar to allow for better organization of the
 st.sidebar.title('Enter Customer Entity Pattern')
 with st.sidebar.form(key='pattern_form'):
     label = st.text_input('Entity Label')
@@ -39,9 +42,9 @@ if "entity_ruler" in nlp.pipe_names:
 ruler = nlp.add_pipe("entity_ruler")
 ruler.add_patterns(st.session_state.patterns)
 
-# User input
+# The user is allowed to input their text into the app this way
 st.title("Custom Named Entity Recognition App")
-text_input = st.text_area("Paste or type text here:", height=200)
+text_input = st.text_area("Paste or type text here:")
 uploaded_file = st.file_uploader("...or upload a .txt file", type=["txt"])
 
 if uploaded_file:
