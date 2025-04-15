@@ -10,6 +10,8 @@ This app provides users with the opportunity to look further into Named Entity R
 2. Specify the custom **label** and **pattern** you are looking for.
 3. Click **Run NER** to highlight entities instantly!
 
+Link ➡️ [Name Entity Project!](http://localhost:8501/ ) 👋
+
 ## App Features 
 * spaCy 
 * Entity 
