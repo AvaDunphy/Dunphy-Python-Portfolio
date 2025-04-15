@@ -24,5 +24,6 @@ Initally when looking through this project, I was slightly lost. However, I look
 ## Learn More
 Below find some resources that I used which helped me a lot while try to create/accomplish this project. 
 
-st.markdown("- [spaCy EntityRecognizer API Documentation](https://spacy.io/api/entityrecognizer)")
-st.markdown("- [spaCy Named Entities Overview](https://spacy.io/usage/linguistic-features#named-entities)")
+[spaCy EntityRecognizer API Documentation](https://spacy.io/api/entityrecognizer)")
+
+[spaCy Named Entities Overview](https://spacy.io/usage/linguistic-features#named-entities)")
