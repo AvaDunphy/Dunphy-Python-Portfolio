@@ -29,12 +29,25 @@ st.subheader("Lets Get Started! 🎬📚")
 text_input = st.text_area("Enter text below:")
 uploaded_file = st.file_uploader("Or upload .txt file", type=["txt"])
 
+st.markdown("👩‍🏫 **Example: Adding Multiple Patterns & labels**")
+st.code("""
+[
+  {"label": "PERSON", "pattern": "Ava"},
+  {"label": "ORG", "pattern": "Google"},
+  {"label": "GPE", "pattern": "California"}
+]
+""", language='python')
+st.markdown("⬇️ Paste your custom entity patterns in this format.")
+
+#Input Text or File
 st.subheader("Now let's apply some labels and patterns for your text! 🔍")
 label_input = st.text_input("What label would you like to apply? ('ORG' or 'GPE')")
 pattern_input = st.text_input("What pattern would you like to apply? ('Google' or 'VA')")
 
+
+
 if uploaded_file:
-    text_input = uploaded_file.read()
+    text_input = uploaded_file.read().decode
     st.success = (" Your text file was successfully uploaded! Lets take a look...")
 
     try:
@@ -42,6 +55,9 @@ if uploaded_file:
     except:
         st.error("Pattern input is not valid.")
         custom_patterns = []
+        common_labels = [ 
+            "PERSON", "ORG", "GPE", "PRODUCT", "EVENT", "DATE", "TIME"
+        ]
 
 st.button("Run NER")
 if "entity_ruler" in nlp.pipe_names:
@@ -50,7 +66,6 @@ if "entity_ruler" in nlp.pipe_names:
 ruler = nlp.add_pipe("entity_ruler")
 custom_pattern = [{"label": label_input.strip().upper(), "pattern": pattern_input.strip()}]
 ruler.add_patterns(custom_pattern)
-
 doc = nlp(text_input)
 
 st.subheader("Detected Entities 🕵️‍♂️")
@@ -58,5 +73,5 @@ for ent in doc.ents:
     st.markdown(f"`{ent.text}` → **{ent.label_}**")
 
 st.subheader("Entity Visualization 👓")
-html = displacy.render(doc, style="ent", page=True)
+html = spacy.displacy.render(doc, style="ent", page=True)
 st.components.v1.html(html, height=300, scrolling=True)

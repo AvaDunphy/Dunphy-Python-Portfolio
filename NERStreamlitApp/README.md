@@ -20,3 +20,9 @@ This app provides users with the opprotunity to look further into Named Entity R
 Initally when looking through this project, I was slightly lost. However, I looked through some other fellow Github users projects to gain a better understanding of Named Entity Recognition, and I found them to be very helpful. Below find the link to their page if intrested! 
 
 - [GLiNER: GitHub Repository by urchade](https://github.com/urchade/GLiNER) – A generalized, lightweight NER model for low-resource settings.
+
+## Learn More
+Below find some resources that I used which helped me a lot while try to create/accomplish this project. 
+
+st.markdown("- [spaCy EntityRecognizer API Documentation](https://spacy.io/api/entityrecognizer)")
+st.markdown("- [spaCy Named Entities Overview](https://spacy.io/usage/linguistic-features#named-entities)")
