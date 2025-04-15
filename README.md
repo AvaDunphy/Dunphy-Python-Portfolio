@@ -19,6 +19,12 @@ In this project I tied together my knowledge and understanding of entitties, and
 
 Skills: Usage of spaCy & Streamlit. 
 
-<img src="https://raw.githubusercontent.com/yourusername/yourrepo/main/images/input.png" width="600"/>
+<img width="711" alt="84F2740B-7373-4AAC-B279-DB94E196EFFF" src="https://github.com/user-attachments/assets/4834a88d-061e-440a-bbd8-2bd3d08b1133" />
+
+<img width="709" alt="11D1BD2F-3C7F-4FD2-8CBF-E2002F9ACEBD" src="https://github.com/user-attachments/assets/ab0897c3-ec6c-4d90-8c21-ab872a62f9fa" />
+
+<img width="720" alt="B1756060-D24B-4C7C-B0DF-5DC17A042E3F" src="https://github.com/user-attachments/assets/efee819b-9404-42a3-bb24-6a022aa0c0eb" />
+
+
 
 
