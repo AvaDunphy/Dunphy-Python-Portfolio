@@ -19,6 +19,7 @@ In this project I tied together my knowledge and understanding of entitties, and
 
 Skills: Usage of spaCy & Streamlit. 
 
+# Step by Step with photos
 ### Firstly, you either upload the file or input the text that you want to use. 
 <img width="300" alt="84F2740B-7373-4AAC-B279-DB94E196EFFF" src="https://github.com/user-attachments/assets/4834a88d-061e-440a-bbd8-2bd3d08b1133" />
 
