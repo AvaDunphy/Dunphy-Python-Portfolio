@@ -20,6 +20,7 @@ This Named Entity Recognition App breaks down sentence structures, illuminating 
 1. Write your own text in the text box **or** upload a `.txt` file.
 2. Specify the custom **label** and **pattern** you are looking for.
 3. Click **Run NER** to highlight entities instantly!
+            
 
 ⬇️ Now lets get started!
 """)
