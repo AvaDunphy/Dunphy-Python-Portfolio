@@ -19,27 +19,12 @@ In this project I tied together my knowledge and understanding of entitties, and
 
 Skills: Usage of spaCy & Streamlit. 
 
-### Images
-screenshot_input_text.png
-screenshot_detected_entities.png
-screenshot_visualization.png
-## 📸 App Preview
+<h3>🔤 1. Entering Text & Custom Patterns</h3>
+<img src="https://user-images.githubusercontent.com/xxxxxx/screenshot_input_text.png" alt="Input area" width="600"/>
 
-This app allows users to upload or enter text, define custom named entity patterns, and visualize detected entities using spaCy and Streamlit.
+<h3>🕵️‍♀️ 2. Detected Entities Output</h3>
+<img src="https://user-images.githubusercontent.com/xxxxxx/screenshot_detected_entities.png" alt="Entities output" width="600"/>
 
-### 🔤 1. Entering Text & Custom Patterns
-
-![User input area with text and pattern list](screenshot_input_text.png)
-
----
-
-### 🕵️‍♀️ 2. Detected Entities Output
-
-![List of detected entities after NER is applied](screenshot_detected_entities.png)
-
----
-
-### 👓 3. Entity Visualization (via spaCy's displacy)
-
-![Highlighted named entities in the user-provided text](screenshot_visualization.png)
+<h3>👓 3. Entity Visualization</h3>
+<img src="https://user-images.githubusercontent.com/xxxxxx/screenshot_visualization.png" alt="NER visualization" width="600"/>
 
