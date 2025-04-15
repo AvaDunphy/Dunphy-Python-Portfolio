@@ -19,13 +19,13 @@ In this project I tied together my knowledge and understanding of entitties, and
 
 Skills: Usage of spaCy & Streamlit. 
 
-Firstly, you either upload the file or input the text that you want to use. 
+## Firstly, you either upload the file or input the text that you want to use. 
 <img width="511" alt="84F2740B-7373-4AAC-B279-DB94E196EFFF" src="https://github.com/user-attachments/assets/4834a88d-061e-440a-bbd8-2bd3d08b1133" />
 
-THEN, you can add special petermiters as to what patterns and labels you want.
+## THEN, you can add special petermiters as to what patterns and labels you want.
 <img width="509" alt="11D1BD2F-3C7F-4FD2-8CBF-E2002F9ACEBD" src="https://github.com/user-attachments/assets/ab0897c3-ec6c-4d90-8c21-ab872a62f9fa" />
 
-Finally! This is the result you will end up.
+## Finally! This is the result you will end up.
 <img width="520" alt="B1756060-D24B-4C7C-B0DF-5DC17A042E3F" src="https://github.com/user-attachments/assets/efee819b-9404-42a3-bb24-6a022aa0c0eb" />
 
 
