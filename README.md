@@ -11,6 +11,7 @@ In this project, I looked at the 2008 Olympic Medalist data. Though the data was
 
 
 ## [Name Entity Project!](https://github.com/AvaDunphy/Dunphy-Python-Portfolio/tree/main/NERStreamlitApp) 👋
+## Name Entity Recognition 📸
 In this project I tied together my knowledge and understanding of entitties, and the combinations of Python, spaCy and streamlit, to develop a Named Entiy Recognition application. Through this app, I am able to allow users to upload text, data, html files, etc, and view their highlighted entities (which I deemed variable in my personal entity labels/rules). This way, I am able to recongize key features of users uploads, as well as bring attention to any particular issue areas of the text/data. This project allowed me to improve my python abilities, and begin the process of deciding what I want to do with my own code. The freedom of this project allowed me to develop my own rules and guidelines, pushing my creatiity and coding ability.
 
 ### How to Get to Git Hub 
@@ -18,4 +19,4 @@ In this project I tied together my knowledge and understanding of entitties, and
 
 Skills: Usage of spaCy & Streamlit. 
 
-## Images
+### Images
