@@ -18,17 +18,3 @@ In this project, I tied together my knowledge and understanding of entities, and
 ### Link ➡️ [Name Entity Project!](http://localhost:8501/ ) 👋
 
 Skills: Usage of spaCy & Streamlit. 
-
-## Step-by-Step with Photos
-### First, either upload a file or input the text you want to use.
-<img width="300" alt="84F2740B-7373-4AAC-B279-DB94E196EFFF" src="https://github.com/user-attachments/assets/4834a88d-061e-440a-bbd8-2bd3d08b1133" />
-
-### Then, you can add specific parameters for the patterns and labels you want to apply.
-<img width="300" alt="11D1BD2F-3C7F-4FD2-8CBF-E2002F9ACEBD" src="https://github.com/user-attachments/assets/ab0897c3-ec6c-4d90-8c21-ab872a62f9fa" />
-
-### Finally, this is the result you’ll see!
-<img width="300" alt="B1756060-D24B-4C7C-B0DF-5DC17A042E3F" src="https://github.com/user-attachments/assets/efee819b-9404-42a3-bb24-6a022aa0c0eb" />
-
-
-
-
