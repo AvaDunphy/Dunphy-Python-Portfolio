@@ -19,12 +19,6 @@ In this project I tied together my knowledge and understanding of entitties, and
 
 Skills: Usage of spaCy & Streamlit. 
 
-<h3>🔤 1. Entering Text & Custom Patterns</h3>
-<img src="https://user-images.githubusercontent.com/xxxxxx/screenshot_input_text.png" alt="Input area" width="600"/>
+<img src="https://raw.githubusercontent.com/yourusername/yourrepo/main/images/input.png" width="600"/>
 
-<h3>🕵️‍♀️ 2. Detected Entities Output</h3>
-<img src="https://user-images.githubusercontent.com/xxxxxx/screenshot_detected_entities.png" alt="Entities output" width="600"/>
-
-<h3>👓 3. Entity Visualization</h3>
-<img src="https://user-images.githubusercontent.com/xxxxxx/screenshot_visualization.png" alt="NER visualization" width="600"/>
 
