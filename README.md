@@ -20,4 +20,4 @@ In this project I tied together my knowledge and understanding of entitties, and
 Skills: Usage of spaCy & Streamlit. 
 
 ### Images
-<img src="screenshot.png" alt="NER App Screenshot" width="600"/>
+
