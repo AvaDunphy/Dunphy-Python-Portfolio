@@ -19,7 +19,7 @@ st.markdown("""
 
 BLAH BLAH BLAH BLAH 
 
-## ** Follow These Steps to Get Started: **
+## **Follow These Steps to Get Started:**
 1. 
 
 """)
