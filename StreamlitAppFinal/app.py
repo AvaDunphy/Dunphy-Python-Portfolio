@@ -19,3 +19,5 @@ st.markdown("""
 # BLAH BLAH BLAH BLAH 
 
 """)
+
+print(path)
