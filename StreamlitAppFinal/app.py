@@ -56,7 +56,7 @@ st.title("🎵 Spotify Mood Data Preview")
 st.write("Here are the first 10 rows of your dataset:")
 
 #Let's clean up the data set a little bit
-df_clean = df.drop(columns=['track_id', 'duration_ms', 'unamed:0'])
+df_clean = df.drop(columns=['track_id', 'duration_ms' ])
 
 st.dataframe(df_clean.head(10))
 
