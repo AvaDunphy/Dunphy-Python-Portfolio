@@ -30,14 +30,14 @@ tab1, tab2, tab3, tab4 = st.tabs(["📊Music Data", "📝Take Mood Quiz", "🎶M
 
 # Tab 1 - Data
 with tab1:
-    st.header("What are people listening to? 🤷‍♀️")
+    st.title("What are people listening to? 🤷‍♀️")
     st.write(" blah blah blah, heres what the data is, what it shows, what you can do, how it helps")
     # First, inputting the data set into the machine
     csv_path = "/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/dataset.csv"
     df = pd.read_csv(csv_path)
 
     # Second, making some titles
-    st.title("🎵 Spotify Mood Data Preview")
+    st.header("🎵 Spotify Mood Data Preview")
     st.write("Below you will find BLAH BLAH BLAH -- Lets take a look at the first ten rows of the data set:")
 
     # Third, Let's clean up the data set a little bit
