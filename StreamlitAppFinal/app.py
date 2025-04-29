@@ -57,9 +57,6 @@ st.write("Here are the first 10 rows of your dataset:")
 
 #Let's clean up the data set a little bit
 df_clean = df.drop(columns=['track_id', 'duration_ms', "Unnamed: 0"])
-
-df.columns = df.columns.str.replace('_', ' ')
+df_clean.columns = df.columns.str.replace('_', ' ')
 
 st.dataframe(df_clean.head(10))
-
-
