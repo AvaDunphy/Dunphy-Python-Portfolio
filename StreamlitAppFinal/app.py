@@ -46,17 +46,20 @@ with tab3:
     st.header(" ℹ️ About")
     st.write("This app was built to help you discover new music based on your mood. Enjoy!")
 
-# What does into Each Tab Break Down
+# TAB BY TAB BREAK DOWN
+
 ## Tab 1 - Data 
+# First, inputting the data set into the machine
 csv_path = "/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/dataset.csv"
 df = pd.read_csv(csv_path)
 
-# Preview the first 10 rows
-st.title("🎵 Spotify Mood Data Preview")
-st.write("Here are the first 10 rows of your dataset:")
-
-#Let's clean up the data set a little bit
+# Second, Let's clean up the data set a little bit
 df_clean = df.drop(columns=['track_id', 'duration_ms', "Unnamed: 0"]) # This line allows me to drop some files that I didn't want showing
 df_clean.columns = df_clean.columns.str.replace('_', ' ', regex=False).str.title() # This makes the titles a little more clean with no "_"
-
 st.dataframe(df_clean.head(10))
+
+# Third, making some titles
+st.title("🎵 Spotify Mood Data Preview")
+st.write("Lets take a look at the first ten rows of the data set:")
+
+# Fourth, let add in some button and interactivty with the audience
