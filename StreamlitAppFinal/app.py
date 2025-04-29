@@ -2,6 +2,7 @@ import streamlit as st
 import spacy 
 from spacy.pipeline import EntityRuler
 from spacy import displacy
+import pandas as pd
 nlp = spacy.load("en_core_web_sm")
 
 ## Import Spotify Tracks Dataset - Mainly for tab one information 
