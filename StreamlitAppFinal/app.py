@@ -19,10 +19,11 @@ st.markdown("""
 
 BLAH BLAH BLAH BLAH 
 
+## ** Follow These Steps to Get Started: **
+1. 
+
 """)
 
-
-st.title("🎶 Mood-Based Music Recommender 🎶")
 
 # Create tabs
 tab1, tab2, tab3 = st.tabs(["Take Mood Quiz", "Music Recommendations", "About This App"])
