@@ -2,7 +2,6 @@ import streamlit as st
 import spacy 
 from spacy.pipeline import EntityRuler
 from spacy import displacy
-
 nlp = spacy.load("en_core_web_sm")
 
 ## Import Spotify Tracks Dataset - Mainly for tab one information 
@@ -15,11 +14,12 @@ st.title("Whats Your Jam? 🎧 ")
 st.markdown("""
 ### Lets simplify finding the perfect song...🎶
 BLAH BLAH BLAH BLAH 
-
+What does Tab 1 and Tab 2 provide information about, but not neccessary for the quiz. 
+            
 **Follow These Steps to Get Started:**
-1. Look at the data! Take a look at the different kind of music offered, and how it relates to different generes.
-2. Take your quiz! 
-3. In put your mood into music recommendations and find what songs are best for you now. 
+1. Go to the Mood Quiz Tab (Tab 2), and take your quiz. 
+2. After being given your mood, go to the Music Recomendation Tab (Tab 3) and input your mood to get your recomendations. 
+
 """)
 
 #Organize the Tabs on the app, different tabs. 
