@@ -54,7 +54,10 @@ df = pd.read_csv(csv_path)
 # Preview the first 10 rows
 st.title("🎵 Spotify Mood Data Preview")
 st.write("Here are the first 10 rows of your dataset:")
-st.dataframe(df.head(10))
 
-   
+#Let's clean up the data set a little bit
+df_clean = df.drop(columns=['track_id'])
+df_clean = df.drop(columns=['duration_ms'])
+
+st.dataframe(df_clean.head(10))
 
