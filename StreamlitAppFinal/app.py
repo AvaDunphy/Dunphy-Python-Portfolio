@@ -14,7 +14,7 @@ path = kagglehub.dataset_download("maharshipandya/-spotify-tracks-dataset")
 
 st.title("Whats Your Jam? 🎧 ")
 
-st.markdown(""
-            Hey There! Do you struggle to find the perfect song to fit the mood? Wether you trying to study, cook, 
-            chill out, or get hype. Well look no further! blah blah blah blah blah
-            "")
+st.markdown("""
+### What do you like to listen too? 
+
+""")
