@@ -16,7 +16,7 @@ st.markdown("""
 ### Lets simplify finding the perfect song...🎶
 BLAH BLAH BLAH BLAH 
 
-## Follow These Steps to Get Started:
+**Follow These Steps to Get Started:**
 1. Look at the data! Take a look at the different kind of music offered, and how it relates to different generes.
 2. Take your quiz! 
 3. In put your mood into music recommendations and find what songs are best for you now. 
