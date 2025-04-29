@@ -56,7 +56,7 @@ st.title("🎵 Spotify Mood Data Preview")
 st.write("Here are the first 10 rows of your dataset:")
 
 #Let's clean up the data set a little bit
-df_clean = df.drop(columns=['track_id', 'duration_ms', "Unnamed: 0"])
-df_clean.columns = df_clean.columns.str.replace('_', ' ', regex=False)
+df_clean = df.drop(columns=['track_id', 'duration_ms', "Unnamed: 0"]) # This line allows me to drop some files that I didn't want showing
+df_clean.columns = df_clean.columns.str.replace('_', ' ', regex=False).str.title() # This makes the titles a little more clean with no "_"
 
 st.dataframe(df_clean.head(10))
