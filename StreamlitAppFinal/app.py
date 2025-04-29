@@ -29,13 +29,6 @@ tab1, tab2, tab3, tab4 = st.tabs(["📊Music Data", "📝Take Mood Quiz", "🎶M
 with tab1:
     st.header("Song Data")
     st.write(" blah blah blah, heres what the data is, what it shows, what you can do, how it helps")
-    csv_path = "dataset.csv"  # only needs to be relative to app.py if in same folder
-    df = pd.read_csv(csv_path)
-
-# Preview the first 10 rows
-st.title("🎵 Spotify Mood Data Preview")
-st.write("Here are the first 10 rows of your dataset:")
-st.dataframe(df.head(10))
 
 # Tab 2 - Quiz
 with tab2:
@@ -51,6 +44,16 @@ with tab3:
 with tab3:
     st.header(" ℹ️ About")
     st.write("This app was built to help you discover new music based on your mood. Enjoy!")
+
+# What does into Each Tab Break Down
+## Tab 1 - Data 
+csv_path = "/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/dataset.csv"
+df = pd.read_csv(csv_path)
+
+# Preview the first 10 rows
+st.title("🎵 Spotify Mood Data Preview")
+st.write("Here are the first 10 rows of your dataset:")
+st.dataframe(df.head(10))
 
    
 
