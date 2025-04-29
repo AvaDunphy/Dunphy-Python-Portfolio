@@ -16,11 +16,11 @@ st.title("Whats Your Jam? 🎧 ")
 
 st.markdown("""
 ### Lets simplify finding the perfect song...🎶
-# BLAH BLAH BLAH BLAH 
+
+BLAH BLAH BLAH BLAH 
 
 """)
 
-import streamlit as st
 
 st.title("🎶 Mood-Based Music Recommender 🎶")
 
