@@ -15,7 +15,7 @@ print("Path to dataset files:", path)
 #Heading/Small Paragraph/Instructions
 st.title(" Whats Your Jam? 🎧 ")
 
-st.title("### Lets simplify finding the perfect song...🎶")
+st.subheader(" Lets simplify finding the perfect song...🎶")
 st.markdown("""
 Have you ever been caught, unsure of what to put on the radio? Wether you want to listen to some slow jazz, 
 some up beat pop, maybe rap? Well, look no further! In this app, you are able to either take a peak 
@@ -24,15 +24,16 @@ is a data set filled with different songs, artists, genres, etc, that will provi
 not enough, scroll over to the second tab to take a mood quiz. From there, take your mood to the recommendations tab 
 and find what songs go best with your mood! 
 
-            
-**It's Simple! Follow These Steps to Get Started:** 🪜
-    
-1️⃣ Do a little research below, find some inspiration in our data.
-             
-2️⃣ Take your mood quiz on tab 2! 
-            
-3️⃣ Then insert your mood into tab 3 and get fast reliable recommendations! 
+""")           
 
+st.subheader(" **It's Simple! Follow These Steps to Get Started:** 🪜")
+st.markdown("""
+
+1️⃣ Do a little research below, find some inspiration in our data.
+
+2️⃣ Take your mood quiz on tab 2! 
+
+3️⃣ Then insert your mood into tab 3 and get fast reliable recommendations! 
 """)
 
 #Organize the Tabs on the app, different tabs. 
