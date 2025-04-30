@@ -5,10 +5,11 @@ from spacy import displacy
 import pandas as pd
 nlp = spacy.load("en_core_web_sm")
 
-## Import Spotify Tracks Dataset - Mainly for tab one information 
 import kagglehub
 # Download latest version
 path = kagglehub.dataset_download("maharshipandya/-spotify-tracks-dataset")
+
+print("Path to dataset files:", path)
 
 #Heading/Small Paragraph/Instructions
 st.title("Whats Your Jam? 🎧 ")
@@ -33,7 +34,7 @@ with tab1:
     st.title("What are people listening to? 🤷‍♀️")
     st.write(" blah blah blah, heres what the data is, what it shows, what you can do, how it helps")
     # First, inputting the data set into the machine
-    csv_path = "/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/dataset.csv"
+    csv_path = "/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/musicdataset.csv"
     df = pd.read_csv(csv_path)
 
     # Second, making some titles
