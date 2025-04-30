@@ -14,7 +14,7 @@ print("Path to dataset files:", path)
 #Heading/Small Paragraph/Instructions
 st.title("Whats Your Jam? 🎧 ")
 st.markdown("""
-### Lets simplify finding the perfect song...🎶
+## Lets simplify finding the perfect song...🎶
 BLAH BLAH BLAH BLAH 
 What does Tab 1 and Tab 2 provide information about, but not neccessary for the quiz. 
             
@@ -46,10 +46,9 @@ with tab1:
     df_clean.columns = df_clean.columns.str.replace('_', ' ', regex=False).str.title() # This makes the titles a little more clean with no "_"
     st.dataframe(df_clean.head(10))
 
+ Fourth, let add in some button and interactivty with the audience
 
-# Fourth, let add in some button and interactivty with the audience
-
-# 🔍 Add Filter Options
+    # 🔍 Add Filter Options
     st.subheader("🔎 Filter the Music Data")
 
     # Create sidebar or expandable filters if needed
@@ -63,14 +62,12 @@ with tab1:
         filtered_df = df_clean[df_clean['Genre'] == selected_genre]
         st.write(f"Showing songs in the **{selected_genre}** genre:")
         st.dataframe(filtered_df)
-
     elif filter_by == "Artist":
         artists = df_clean['Artists'].dropna().unique()
         selected_artist = st.selectbox("Select an artist:", sorted(artists))
         filtered_df = df_clean[df_clean['Artists'] == selected_artist]
         st.write(f"Showing songs by **{selected_artist}**:")
         st.dataframe(filtered_df)
-
     elif filter_by == "Popularity":
         min_pop = int(df_clean['Popularity'].min())
         max_pop = int(df_clean['Popularity'].max())
@@ -80,7 +77,6 @@ with tab1:
         ]
         st.write(f"Showing songs with popularity between {selected_range[0]} and {selected_range[1]}:")
         st.dataframe(filtered_df)
-
     elif filter_by == "Tempo":
         min_tempo = float(df_clean['Tempo'].min())
         max_tempo = float(df_clean['Tempo'].max())
@@ -90,7 +86,6 @@ with tab1:
         ]
         st.write(f"Showing songs with tempo between {selected_tempo[0]:.1f} and {selected_tempo[1]:.1f} BPM:")
         st.dataframe(filtered_df)
-
     else:
         st.info("Use the dropdown above to filter the dataset.")
 
