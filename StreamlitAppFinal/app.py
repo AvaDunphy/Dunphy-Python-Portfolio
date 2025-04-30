@@ -116,7 +116,7 @@ with tab2:
 
     # -- Question 1 -- 
     Question_one = st.radio(
-        "It's a Friday night, whats the plan?",
+        st.write("Okay whats the plan for the next couple of hours?"),
         ("Going to a party" , "Staying home and reading", " Hang out with Friends", "Bed", "Sitting in bed eating ice cream", "Do Nothing")
                             )
     if Question_one == "Going to a party":
