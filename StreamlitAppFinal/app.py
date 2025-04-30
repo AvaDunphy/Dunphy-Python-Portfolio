@@ -132,8 +132,9 @@ with tab2:
         mood_scores["Quiet"] += 1
 
     # -- Question 2 -- 
+    st.markdown("#### **2.What are we drinking right now?**")
     Question_two = st.radio(
-        "What are we drinking right now?",
+        "",
         ("🍸" , "Tea & Honey 🫖", " Coffee ☕️", "Water 💧", "Milkshake 🥤")
     )
 
@@ -149,8 +150,9 @@ with tab2:
         mood_scores["Quiet"] += 1
 
     # -- Question 3 -- 
+    st.markdown("#### **3.What was the outfit vibe of the day?**")
     Question_three = st.radio(
-        "What was the outfit vibe of the day?",
+        "",
         ("Sweats and Hoodie " , "PJs!" ,  "Dressed Up " , "Jeans and a Top", "Something basic")
     )
 
@@ -166,8 +168,9 @@ with tab2:
         mood_scores["Quiet"] += 1
 
      # -- Question 4 -- 
+    st.markdown("#### **4.What would you like to do for fun?**")
     Question_four = st.radio(
-        "What would you like to do for fun?",
+        "",
         ("Cook 🧑‍🍳" , "Read a Book 📚" ,  "Hang with Friends 😜" , "Go Out 🎉 ", "Be alone 🙂")
     )
 
@@ -183,8 +186,9 @@ with tab2:
         mood_scores["Quiet"] += 1
 
      # -- Question 5 -- 
+    st.markdown("#### **5.Whats your favorite color?**")
     Question_five = st.radio(
-        "Whats your favorite color?",
+        "",
         ("Red 🍓" , "Green 🌲" ,  "Yellow 🍋" , "Blue 🐟", "Brown 🐻")
     )
 
