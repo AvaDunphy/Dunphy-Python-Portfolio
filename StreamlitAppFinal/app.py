@@ -25,7 +25,7 @@ What does Tab 1 and Tab 2 provide information about, but not neccessary for the 
 """)
 
 #Organize the Tabs on the app, different tabs. 
-tab1, tab2, tab3, tab4 = st.tabs(["📊Music Data", "📝Take Mood Quiz", "🎶Music Recommendations", "ℹ️About This App"])
+tab1, tab2, tab3, tab4 = st.tabs(["📊 Music Data", "📝 Take Mood Quiz", "🎶 Music Recommendations", "ℹ️ About This App"])
 
 # TAB BY TAB BREAK DOWN 
 
@@ -36,9 +36,8 @@ with tab1:
     # First, inputting the data set into the machine
     csv_path = "/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/musicdataset.csv"
     df = pd.read_csv(csv_path)
-
     # Second, making some titles
-    st.header("🎵 Spotify Mood Data Preview")
+    st.header("🎵 Spotify Data Preview")
     st.write("Below you will find BLAH BLAH BLAH -- Lets take a look at the first ten rows of the data set:")
 
     # Third, Let's clean up the data set a little bit
@@ -56,8 +55,8 @@ with tab1:
                              ["None", "Genre", "Artist", "Popularity", "Tempo"])
 
     # Apply selected filter
-    if filter_by == "Genre":
-        genres = df_clean['Genre'].dropna().unique()
+    if filter_by == "Track Genre":
+        genres = df_clean['Track Genre'].dropna().unique()
         selected_genre = st.selectbox("Select a genre:", sorted(genres))
         filtered_df = df_clean[df_clean['Genre'] == selected_genre]
         st.write(f"Showing songs in the **{selected_genre}** genre:")
@@ -88,7 +87,6 @@ with tab1:
         st.dataframe(filtered_df)
     else:
         st.info("Use the dropdown above to filter the dataset.")
-
 
 # Tab 2 - Quiz
 with tab2:
