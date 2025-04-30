@@ -164,6 +164,40 @@ with tab2:
     elif Question_three == "Something Basic " : 
         mood_scores["Quiet"] += 1
 
+     # -- Question 4 -- 
+    Question_four = st.radio(
+        "What would you like to do for fun?",
+        ("Cook" , "Read a Book" ,  "Hang with Friends" "Go Out ", "Be alone")
+    )
+
+    if Question_four == "Go Out":
+        mood_scores["Excited"] += 1 
+    elif Question_four == "Cook":
+        mood_scores["Chill "] +=  1
+    elif Question_four == "Hang with Friends":
+        mood_scores["Happy"] += 1
+    elif Question_four == "Be alone":
+        mood_scores[" Sad "] += 1
+    elif Question_four == "Read a Book " : 
+        mood_scores["Quiet"] += 1
+
+     # -- Question 5 -- 
+    Question_five = st.radio(
+        "Whats your favorite color?",
+        ("Red" , "Green" ,  "Yellow" "Blue ", "Brown")
+    )
+
+    if Question_five == "Red":
+        mood_scores["Excited"] += 1 
+    elif Question_five == "Green":
+        mood_scores["Chill "] +=  1
+    elif Question_five == "Yellow":
+        mood_scores["Happy"] += 1
+    elif Question_five == "Blue":
+        mood_scores[" Sad "] += 1
+    elif Question_five == "Brown" : 
+        mood_scores["Quiet"] += 1
+
 # Tab 3 - Recomendations
 with tab3:
     st.header("🎵 Music Recommendation ")
