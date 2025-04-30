@@ -197,6 +197,13 @@ with tab2:
         mood_scores[" Sad "] += 1
     elif Question_five == "Brown" : 
         mood_scores["Quiet"] += 1
+    
+    # --- Submit Button ---
+if st.button("Submit"):
+    # Determine the mood with the highest score
+    detected_mood = max(mood_scores, key=mood_scores.get)
+
+    st.subheader(f"Your mood is: {detected_mood}!")
 
 # Tab 3 - Recomendations
 with tab3:
