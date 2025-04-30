@@ -102,23 +102,42 @@ with tab2:
         " Sad " : 0, 
         "Chill " : 0, 
         "Excited" : 0,
-        "Quiet"
+        "Quiet" : 0
     }
 
     # -- Question 1 -- 
     Question_one = st.radio(
         "It's a Friday night, whats the plan?",
-        ("Going to a party" , "Staying home and reading", " Gym time", "Bed", "Sitting in bed eating ice cream")
+        ("Going to a party" , "Staying home and reading", " Hang out with Friends", "Bed", "Sitting in bed eating ice cream", "Do Nothing")
     )
 
     if Question_one == "Going to a party":
         mood_scores["Excited"] += 1 
     elif Question_one == "Staying home and reading":
         mood_scores["Chill "] +=  1
-    elif Question_one == " Gym time":
-        mood_scores['Bed'] += 1
+    elif Question_one == "Hang out with Friends":
+        mood_scores["Happy"] += 1
     elif Question_one == "Sitting in bed eating ice cream":
         mood_scores[" Sad "] += 1
+    elif Question_one == "Do Nothing" : 
+        mood_scores["Quiet"] += 1
+
+    # -- Question 2 -- 
+    Question_two = st.radio(
+        "Whats your favorite drink?",
+        ("🍸" , "Tea & Honey", " Coffee ", "Water", "Milkshake")
+    )
+
+    if Question_one == "🍸":
+        mood_scores["Excited"] += 1 
+    elif Question_one == "Tea & Honey":
+        mood_scores["Chill "] +=  1
+    elif Question_one == "Coffee":
+        mood_scores["Happy"] += 1
+    elif Question_one == "Milkshake":
+        mood_scores[" Sad "] += 1
+    elif Quesion_one == "Water " : 
+        mood_scores["Quiet"] += 1
 
 # Tab 3 - Recomendations
 with tab3:
