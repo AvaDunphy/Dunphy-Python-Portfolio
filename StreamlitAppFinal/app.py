@@ -3,6 +3,7 @@ import spacy
 from spacy.pipeline import EntityRuler
 from spacy import displacy
 import pandas as pd
+from PIL import Image
 nlp = spacy.load("en_core_web_sm")
 
 import kagglehub
@@ -13,6 +14,7 @@ print("Path to dataset files:", path)
 
 #Heading/Small Paragraph/Instructions
 st.title("Whats Your Jam? 🎧 ")
+
 st.markdown("""
 ## Lets simplify finding the perfect song...🎶
 BLAH BLAH BLAH BLAH 
@@ -49,6 +51,11 @@ with tab1:
 
     # 🔍 Add Filter Options
     st.subheader("🔎 Filter the Music Data")
+
+    image = Image.open("/mnt/data/5109346A-C8DD-44DE-8A8A-27A2FAB020D8_4_5005_c.jpeg")
+    st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+    st.image(image, width=300)
+    st.markdown("</div>", unsafe_allow_html=True)
 
     # Create sidebar or expandable filters if needed
     filter_by = st.selectbox("Choose what you'd like to filter by:", 
