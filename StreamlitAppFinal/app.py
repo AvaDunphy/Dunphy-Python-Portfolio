@@ -107,29 +107,29 @@ with tab2:
     st.write("five questions, lets find out what music you should listen to based on your mood")
     
     mood_scores = { 
-        "Happy" : 0, 
-        " Sad " : 0, 
-        "Chill " : 0, 
-        "Excited" : 0,
-        "Quiet" : 0
+    "Happy" : 0, 
+    " Sad " : 0, 
+    "Chill " : 0, 
+    "Excited" : 0,
+    "Quiet" : 0
     }
 
     # -- Question 1 -- 
-    Question_one = st.radio(
-        "It's a Friday night, whats the plan?",
-        ("Going to a party" , "Staying home and reading", " Hang out with Friends", "Bed", "Sitting in bed eating ice cream", "Do Nothing")
+Question_one = st.radio(
+    "It's a Friday night, whats the plan?",
+        "Going to a party" , "Staying home and reading", " Hang out with Friends", "Bed", "Sitting in bed eating ice cream", "Do Nothing")
     )
 
-    if Question_one == "Going to a party":
-        mood_scores["Excited"] += 1 
-    elif Question_one == "Staying home and reading":
-        mood_scores["Chill "] +=  1
-    elif Question_one == "Hang out with Friends":
-        mood_scores["Happy"] += 1
-    elif Question_one == "Sitting in bed eating ice cream":
-        mood_scores[" Sad "] += 1
-    elif Question_one == "Do Nothing" : 
-        mood_scores["Quiet"] += 1
+if Question_one == "Going to a party":
+    mood_scores["Excited"] += 1 
+elif Question_one == "Staying home and reading":
+    mood_scores["Chill "] +=  1
+elif Question_one == "Hang out with Friends":
+    mood_scores["Happy"] += 1
+elif Question_one == "Sitting in bed eating ice cream":
+    mood_scores[" Sad "] += 1
+elif Question_one == "Do Nothing" : 
+    mood_scores["Quiet"] += 1
 
     # -- Question 2 -- 
     Question_two = st.radio(
