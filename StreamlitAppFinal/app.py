@@ -184,7 +184,7 @@ with tab2:
      # -- Question 5 -- 
     Question_five = st.radio(
         "Whats your favorite color?",
-        ("Red" , "Green" ,  "Yellow" "Blue ", "Brown")
+        ("Red" , "Green" ,  "Yellow" , "Blue ", "Brown")
     )
 
     if Question_five == "Red":
