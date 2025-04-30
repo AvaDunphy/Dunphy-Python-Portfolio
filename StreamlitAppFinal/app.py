@@ -13,16 +13,22 @@ path = kagglehub.dataset_download("maharshipandya/-spotify-tracks-dataset")
 print("Path to dataset files:", path)
 
 #Heading/Small Paragraph/Instructions
-st.title("Whats Your Jam? 🎧 ")
+st.title(" Whats Your Jam? 🎧 ")
 
 st.markdown("""
-## Lets simplify finding the perfect song...🎶
-BLAH BLAH BLAH BLAH 
-What does Tab 1 and Tab 2 provide information about, but not neccessary for the quiz. 
+### Lets simplify finding the perfect song...🎶
+Have you ever been caught, unsure of what to put on the radio? Wether you want to listen to some slow jazz, 
+some up beat pop, maybe rap? Well, look no further! In this app, you are able to either take a peak 
+at what others are listening to OR get recommendations based on your mood. As you can see from below, there
+is a data set filled with different songs, artists, genres, etc, that will provide some inspiration, but if thats
+not enough, scroll over to the second tab to take a mood quiz. From there, take your mood to the recommendations tab 
+and find what songs go best with your mood! 
+
             
-**Follow These Steps to Get Started:**
-1. Go to the Mood Quiz Tab (Tab 2), and take your quiz. 
-2. After being given your mood, go to the Music Recomendation Tab (Tab 3) and input your mood to get your recomendations. 
+**It's Simple! Follow These Steps to Get Started:** 🪜
+1️⃣ Do a little research below, find some inspiration in our data. 
+2️⃣ Take your mood quiz on tab 2! 
+3️⃣ Then insert your mood into tab 3 and get fast reliable recommendations! 
 
 """)
 
