@@ -15,8 +15,8 @@ print("Path to dataset files:", path)
 #Heading/Small Paragraph/Instructions
 st.title(" Whats Your Jam? 🎧 ")
 
+st.title("### Lets simplify finding the perfect song...🎶")
 st.markdown("""
-### Lets simplify finding the perfect song...🎶
 Have you ever been caught, unsure of what to put on the radio? Wether you want to listen to some slow jazz, 
 some up beat pop, maybe rap? Well, look no further! In this app, you are able to either take a peak 
 at what others are listening to OR get recommendations based on your mood. As you can see from below, there
