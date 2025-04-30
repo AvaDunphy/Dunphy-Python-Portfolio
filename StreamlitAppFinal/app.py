@@ -213,10 +213,12 @@ with tab2:
 # Tab 3 - Recomendations (Based on mood you should listen to ...)
 with tab3:
     st.header("🎵 Music Recommendation ")
-    st.write("finally! lets get to the recomendations, what should you listen to. Songs AND artists")
+    st.write("So, don't forget your what mood you were given based on your quiz OR what you're feeling right now! Below find some" \
+    "peramiters that you can use to zone in on what kind of music you want to hear. Simply follow the BLHA BLAH BLAH BLAH")
+
 
 # Tab 4 - About
-with tab3:
+with tab4:
     st.header(" ℹ️ About")
     st.write("This app was built to help you discover new music based on your mood. Enjoy!")
 
