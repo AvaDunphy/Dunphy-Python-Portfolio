@@ -52,13 +52,13 @@ with tab1:
 
     # Create sidebar or expandable filters if needed
     filter_by = st.selectbox("Choose what you'd like to filter by:", 
-                             ["None", "Genre", "Artist", "Popularity", "Tempo"])
+                             ["None", "Track Genre", "Artist", "Popularity", "Tempo"])
 
     # Apply selected filter
     if filter_by == "Track Genre":
         genres = df_clean['Track Genre'].dropna().unique()
         selected_genre = st.selectbox("Select a genre:", sorted(genres))
-        filtered_df = df_clean[df_clean['Genre'] == selected_genre]
+        filtered_df = df_clean[df_clean['Track Genre'] == selected_genre]
         st.write(f"Showing songs in the **{selected_genre}** genre:")
         st.dataframe(filtered_df)
     elif filter_by == "Artist":
