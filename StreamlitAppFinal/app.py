@@ -136,15 +136,32 @@ with tab2:
         ("🍸" , "Tea & Honey", " Coffee ", "Water", "Milkshake")
     )
 
-    if Question_one == "🍸":
+    if Question_two == "🍸":
         mood_scores["Excited"] += 1 
-    elif Question_one == "Tea & Honey":
+    elif Question_two == "Tea & Honey":
         mood_scores["Chill "] +=  1
-    elif Question_one == "Coffee":
+    elif Question_two == "Coffee":
         mood_scores["Happy"] += 1
-    elif Question_one == "Milkshake":
+    elif Question_two == "Milkshake":
         mood_scores[" Sad "] += 1
-    elif Quesion_one == "Water " : 
+    elif Question_two == "Water " : 
+        mood_scores["Quiet"] += 1
+
+    # -- Question 3 -- 
+    Question_three = st.radio(
+        "Whats the outfit of the day?",
+        ("Sweats and Hoodie" , "PJs!" & "Dressed Up " "Bussiness Casual", "Jeans and a Top", "Something basic")
+    )
+
+    if Question_three == "Dressed Up":
+        mood_scores["Excited"] += 1 
+    elif Question_three == "PJs":
+        mood_scores["Chill "] +=  1
+    elif Question_three == "Something Cute":
+        mood_scores["Happy"] += 1
+    elif Question_three == "Sweats and Hoodie":
+        mood_scores[" Sad "] += 1
+    elif Question_three == "Something Basic " : 
         mood_scores["Quiet"] += 1
 
 # Tab 3 - Recomendations
