@@ -45,6 +45,19 @@ with tab1:
     df_clean.columns = df_clean.columns.str.replace('_', ' ', regex=False).str.title() # This makes the titles a little more clean with no "_"
     st.dataframe(df_clean.head(10))
 
+        # 🔍 Filter by genre
+    st.subheader("🎼 Filter by Genre")
+    
+    # Get unique genres (adjust column name if it's not 'Genre')
+    genres = df_clean['Genre'].dropna().unique()
+    selected_genre = st.selectbox("Choose a genre to display:", sorted(genres))
+
+    # Filter the DataFrame
+    filtered_df = df_clean[df_clean['Genre'] == selected_genre]
+
+    st.write(f"Showing songs in the **{selected_genre}** genre:")
+    st.dataframe(filtered_df.head(10))
+
 # Fourth, let add in some button and interactivty with the audience
 
 # Tab 2 - Quiz
