@@ -115,7 +115,7 @@ with tab2:
     }
 
     # -- Question 1 -- 
-    st.markdown("### **1.Okay whats the plan for the next couple of hours?**")
+    st.markdown("# **1.Okay whats the plan for the next couple of hours?**")
     Question_one = st.radio(
         "",
         ("Going to a party 💃" , "Staying home and reading 📖", " Hang out with Friends 👯", "Bed 🛏️", "Sitting in bed eating ice cream 🍨", "Do Nothing 🤷‍♀️")
