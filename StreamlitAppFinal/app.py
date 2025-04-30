@@ -118,17 +118,17 @@ with tab2:
     st.markdown("#### **1.Okay whats the plan for the next couple of hours?**")
     Question_one = st.radio(
         "",
-        ("Going to a party 💃" , "Staying home and reading 📖", " Hang out with Friends 👯", "Bed 🛏️", "Sitting in bed eating ice cream 🍨", "Do Nothing 🤷‍♀️")
+        ("Going to a party 💃" , "Staying home and reading 📖", " Hang out with Friends 👯", "Sitting in bed eating ice cream 🍨", "Do Nothing 🤷‍♀️")
                             )
-    if Question_one == "Going to a party":
+    if Question_one == "Going to a party 💃":
         mood_scores["Excited"] += 1 
-    elif Question_one == "Staying home and reading":
+    elif Question_one == "Staying home and reading 📖":
         mood_scores["Chill "] +=  1
-    elif Question_one == "Hang out with Friends":
+    elif Question_one == "Hang out with Friends 👯":
         mood_scores["Happy"] += 1
-    elif Question_one == "Sitting in bed eating ice cream":
+    elif Question_one == "Sitting in bed eating ice cream 🍨":
         mood_scores[" Sad "] += 1
-    elif Question_one == "Do Nothing" : 
+    elif Question_one == "Do Nothing 🤷‍♀️" : 
         mood_scores["Quiet"] += 1
 
     # -- Question 2 -- 
@@ -140,31 +140,31 @@ with tab2:
 
     if Question_two == "🍸":
         mood_scores["Excited"] += 1 
-    elif Question_two == "Tea & Honey":
+    elif Question_two == "Tea & Honey 🫖":
         mood_scores["Chill "] +=  1
-    elif Question_two == "Coffee":
+    elif Question_two == " Coffee ☕️":
         mood_scores["Happy"] += 1
-    elif Question_two == "Milkshake":
+    elif Question_two == "Milkshake 🥤":
         mood_scores[" Sad "] += 1
-    elif Question_two == "Water " : 
+    elif Question_two == "Water 💧 " : 
         mood_scores["Quiet"] += 1
 
     # -- Question 3 -- 
     st.markdown("#### **3.What was the outfit vibe of the day?**")
     Question_three = st.radio(
         "",
-        ("Sweats and Hoodie " , "PJs!" ,  "Dressed Up " , "Jeans and a Top", "Something basic")
+        ("Sweats and Hoodie 🧥" , "PJs! 🧦" ,  "Dressed Up 🕺" , "Jeans and a Top 👚", "Something basic 👔")
     )
 
-    if Question_three == "Dressed Up":
+    if Question_three == "Dressed Up 🕺":
         mood_scores["Excited"] += 1 
-    elif Question_three == "PJs":
+    elif Question_three == "PJs! 🧦":
         mood_scores["Chill "] +=  1
-    elif Question_three == "Something Cute":
+    elif Question_three == "Jeans and a Top 👚":
         mood_scores["Happy"] += 1
-    elif Question_three == "Sweats and Hoodie":
+    elif Question_three == "Sweats and Hoodie 🧥":
         mood_scores[" Sad "] += 1
-    elif Question_three == "Something Basic " : 
+    elif Question_three == "Something basic 👔" : 
         mood_scores["Quiet"] += 1
 
      # -- Question 4 -- 
@@ -174,15 +174,15 @@ with tab2:
         ("Cook 🧑‍🍳" , "Read a Book 📚" ,  "Hang with Friends 😜" , "Go Out 🎉 ", "Be alone 🙂")
     )
 
-    if Question_four == "Go Out":
+    if Question_four == "Go Out 🎉 ":
         mood_scores["Excited"] += 1 
-    elif Question_four == "Cook":
+    elif Question_four == "Cook 🧑‍🍳":
         mood_scores["Chill "] +=  1
-    elif Question_four == "Hang with Friends":
+    elif Question_four == "Hang with Friends 😜":
         mood_scores["Happy"] += 1
-    elif Question_four == "Be alone":
+    elif Question_four == "Be alone 🙂":
         mood_scores[" Sad "] += 1
-    elif Question_four == "Read a Book " : 
+    elif Question_four == "Read a Book 📚 " : 
         mood_scores["Quiet"] += 1
 
      # -- Question 5 -- 
@@ -192,15 +192,15 @@ with tab2:
         ("Red 🍓" , "Green 🌲" ,  "Yellow 🍋" , "Blue 🐟", "Brown 🐻")
     )
 
-    if Question_five == "Red ":
+    if Question_five == "Red 🍓 ":
         mood_scores["Excited"] += 1 
-    elif Question_five == "Green":
+    elif Question_five == "Green 🌲":
         mood_scores["Chill "] +=  1
-    elif Question_five == "Yellow":
+    elif Question_five == "Yellow 🍋":
         mood_scores["Happy"] += 1
-    elif Question_five == "Blue":
+    elif Question_five == "Blue 🐟":
         mood_scores[" Sad "] += 1
-    elif Question_five == "Brown" : 
+    elif Question_five == "Brown 🐻" : 
         mood_scores["Quiet"] += 1
     
     # --- Submit Button ---
