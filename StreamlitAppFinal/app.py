@@ -167,7 +167,7 @@ with tab2:
      # -- Question 4 -- 
     Question_four = st.radio(
         "What would you like to do for fun?",
-        ("Cook" , "Read a Book" ,  "Hang with Friends" "Go Out ", "Be alone")
+        ("Cook" , "Read a Book" ,  "Hang with Friends" , "Go Out ", "Be alone")
     )
 
     if Question_four == "Go Out":
