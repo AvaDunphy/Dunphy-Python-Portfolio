@@ -133,8 +133,8 @@ with tab2:
 
     # -- Question 2 -- 
     Question_two = st.radio(
-        "Whats your favorite drink?",
-        ("🍸" , "Tea & Honey", " Coffee ", "Water", "Milkshake")
+        "What are we drinking right now?",
+        ("🍸" , "Tea & Honey 🫖", " Coffee ☕️", "Water 💧", "Milkshake 🥤")
     )
 
     if Question_two == "🍸":
@@ -150,8 +150,8 @@ with tab2:
 
     # -- Question 3 -- 
     Question_three = st.radio(
-        "Whats the outfit of the day?",
-        ("Sweats and Hoodie" , "PJs!" ,  "Dressed Up " , "Jeans and a Top", "Something basic")
+        "What was the outfit vibe of the day?",
+        ("Sweats and Hoodie " , "PJs!" ,  "Dressed Up " , "Jeans and a Top", "Something basic")
     )
 
     if Question_three == "Dressed Up":
@@ -168,7 +168,7 @@ with tab2:
      # -- Question 4 -- 
     Question_four = st.radio(
         "What would you like to do for fun?",
-        ("Cook" , "Read a Book" ,  "Hang with Friends" , "Go Out ", "Be alone")
+        ("Cook 🧑‍🍳" , "Read a Book 📚" ,  "Hang with Friends 😜" , "Go Out 🎉 ", "Be alone 🙂")
     )
 
     if Question_four == "Go Out":
@@ -185,10 +185,10 @@ with tab2:
      # -- Question 5 -- 
     Question_five = st.radio(
         "Whats your favorite color?",
-        ("Red" , "Green" ,  "Yellow" , "Blue ", "Brown")
+        ("Red 🍓" , "Green 🌲" ,  "Yellow 🍋" , "Blue 🐟", "Brown 🐻")
     )
 
-    if Question_five == "Red":
+    if Question_five == "Red ":
         mood_scores["Excited"] += 1 
     elif Question_five == "Green":
         mood_scores["Chill "] +=  1
