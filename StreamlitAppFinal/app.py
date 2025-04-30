@@ -26,8 +26,10 @@ and find what songs go best with your mood!
 
             
 **It's Simple! Follow These Steps to Get Started:** 🪜
-1️⃣ Do a little research below, find some inspiration in our data. 
+1️⃣ Do a little research below, find some inspiration in our data.
+             
 2️⃣ Take your mood quiz on tab 2! 
+            
 3️⃣ Then insert your mood into tab 3 and get fast reliable recommendations! 
 
 """)
