@@ -50,11 +50,11 @@ with tab1:
     st.subheader("🎼 Filter by Genre")
     
     # Get unique genres (adjust column name if it's not 'Genre')
-    genres = df_clean['Genre'].dropna().unique()
+    genres = df_clean['track_genre'].dropna().unique()
     selected_genre = st.selectbox("Choose a genre to display:", sorted(genres))
 
     # Filter the DataFrame
-    filtered_df = df_clean[df_clean['Genre'] == selected_genre]
+    filtered_df = df_clean[df_clean['track_genre'] == selected_genre]
 
     st.write(f"Showing songs in the **{selected_genre}** genre:")
     st.dataframe(filtered_df.head(10))
