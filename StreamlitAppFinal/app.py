@@ -208,7 +208,7 @@ if st.button("Submit"):
     # Determine the mood with the highest score
     detected_mood = max(mood_scores, key=mood_scores.get)
 
-    st.subheader(f"Your mood is: {detected_mood}!")
+    st.subheader(f"AND THE VIBE IS >>>> {detected_mood}!")
 
 # Tab 3 - Recomendations
 with tab3:
