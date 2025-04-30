@@ -46,20 +46,54 @@ with tab1:
     df_clean.columns = df_clean.columns.str.replace('_', ' ', regex=False).str.title() # This makes the titles a little more clean with no "_"
     st.dataframe(df_clean.head(10))
 
-        # 🔍 Filter by genre
-    st.subheader("🎼 Filter by Genre")
-    
-    # Get unique genres (adjust column name if it's not 'Genre')
-    genres = df_clean['track_genre'].dropna().unique()
-    selected_genre = st.selectbox("Choose a genre to display:", sorted(genres))
-
-    # Filter the DataFrame
-    filtered_df = df_clean[df_clean['track_genre'] == selected_genre]
-
-    st.write(f"Showing songs in the **{selected_genre}** genre:")
-    st.dataframe(filtered_df.head(10))
 
 # Fourth, let add in some button and interactivty with the audience
+
+# 🔍 Add Filter Options
+    st.subheader("🔎 Filter the Music Data")
+
+    # Create sidebar or expandable filters if needed
+    filter_by = st.selectbox("Choose what you'd like to filter by:", 
+                             ["None", "Genre", "Artist", "Popularity", "Tempo"])
+
+    # Apply selected filter
+    if filter_by == "Genre":
+        genres = df_clean['Genre'].dropna().unique()
+        selected_genre = st.selectbox("Select a genre:", sorted(genres))
+        filtered_df = df_clean[df_clean['Genre'] == selected_genre]
+        st.write(f"Showing songs in the **{selected_genre}** genre:")
+        st.dataframe(filtered_df)
+
+    elif filter_by == "Artist":
+        artists = df_clean['Artists'].dropna().unique()
+        selected_artist = st.selectbox("Select an artist:", sorted(artists))
+        filtered_df = df_clean[df_clean['Artists'] == selected_artist]
+        st.write(f"Showing songs by **{selected_artist}**:")
+        st.dataframe(filtered_df)
+
+    elif filter_by == "Popularity":
+        min_pop = int(df_clean['Popularity'].min())
+        max_pop = int(df_clean['Popularity'].max())
+        selected_range = st.slider("Select popularity range:", min_pop, max_pop, (50, 100))
+        filtered_df = df_clean[
+            (df_clean['Popularity'] >= selected_range[0]) & (df_clean['Popularity'] <= selected_range[1])
+        ]
+        st.write(f"Showing songs with popularity between {selected_range[0]} and {selected_range[1]}:")
+        st.dataframe(filtered_df)
+
+    elif filter_by == "Tempo":
+        min_tempo = float(df_clean['Tempo'].min())
+        max_tempo = float(df_clean['Tempo'].max())
+        selected_tempo = st.slider("Select tempo range:", float(min_tempo), float(max_tempo), (90.0, 130.0))
+        filtered_df = df_clean[
+            (df_clean['Tempo'] >= selected_tempo[0]) & (df_clean['Tempo'] <= selected_tempo[1])
+        ]
+        st.write(f"Showing songs with tempo between {selected_tempo[0]:.1f} and {selected_tempo[1]:.1f} BPM:")
+        st.dataframe(filtered_df)
+
+    else:
+        st.info("Use the dropdown above to filter the dataset.")
+
 
 # Tab 2 - Quiz
 with tab2:
