@@ -40,7 +40,7 @@ tab1, tab2, tab3, tab4 = st.tabs(["📊 Music Data", "📝 Take Mood Quiz", "�
 
 # TAB BY TAB BREAK DOWN 
 
-# Tab 1 - Data
+# Tab 1 - Data Table For Research 
 with tab1:
     st.title("What are people listening to? 🤷‍♀️")
     st.write(" blah blah blah, heres what the data is, what it shows, what you can do, how it helps")
@@ -54,7 +54,7 @@ with tab1:
     # Third, Let's clean up the data set a little bit
     df_clean = df.drop(columns=['track_id', 'duration_ms', "Unnamed: 0"]) # This line allows me to drop some files that I didn't want showing
     df_clean.columns = df_clean.columns.str.replace('_', ' ', regex=False).str.title() # This makes the titles a little more clean with no "_"
-    st.dataframe(df_clean.head(10))
+    st.dataframe(df_clean)
 
     # Fourth, lets add some stuff
 
@@ -101,7 +101,7 @@ with tab1:
     else:
         st.info("Use the dropdown above to filter the dataset.")
 
-# Tab 2 - Quiz
+# Tab 2 - Mood Quiz (5 Questions and Result)
 with tab2:
     st.header("📝 Mood Quiz")
     st.write("five questions, lets find out what music you should listen to based on your mood")
@@ -203,14 +203,14 @@ with tab2:
     elif Question_five == "Brown 🐻" : 
         mood_scores["Quiet"] += 1
     
-    # --- Submit Button ---
-if st.button("Submit"):
+    # --- Submit Button & Result Button --- 
+    if st.button("Submit"):
     # Determine the mood with the highest score
-    detected_mood = max(mood_scores, key=mood_scores.get)
+        detected_mood = max(mood_scores, key=mood_scores.get)
 
-    st.subheader(f"AND THE VIBE IS >>>> {detected_mood}!")
+        st.subheader(f"AND THE VIBE IS >>>> {detected_mood}!")
 
-# Tab 3 - Recomendations
+# Tab 3 - Recomendations (Based on mood you should listen to ...)
 with tab3:
     st.header("🎵 Music Recommendation ")
     st.write("finally! lets get to the recomendations, what should you listen to. Songs AND artists")
