@@ -115,9 +115,9 @@ with tab2:
     }
 
     # -- Question 1 -- 
+    st.markdown("### **1.Okay whats the plan for the next couple of hours?**")
     Question_one = st.radio(
-        st.write("Okay whats the plan for the next couple of hours?"),
-        ("Going to a party" , "Staying home and reading", " Hang out with Friends", "Bed", "Sitting in bed eating ice cream", "Do Nothing")
+        ("Going to a party 💃" , "Staying home and reading 📖", " Hang out with Friends 👯", "Bed 🛏️", "Sitting in bed eating ice cream 🍨", "Do Nothing 🤷‍♀️")
                             )
     if Question_one == "Going to a party":
         mood_scores["Excited"] += 1 
