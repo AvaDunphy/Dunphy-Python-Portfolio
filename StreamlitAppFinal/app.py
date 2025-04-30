@@ -46,7 +46,7 @@ with tab1:
     df_clean.columns = df_clean.columns.str.replace('_', ' ', regex=False).str.title() # This makes the titles a little more clean with no "_"
     st.dataframe(df_clean.head(10))
 
- Fourth, let add in some button and interactivty with the audience
+    # Fourth, lets add some stuff
 
     # 🔍 Add Filter Options
     st.subheader("🔎 Filter the Music Data")
