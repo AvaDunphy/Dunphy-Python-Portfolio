@@ -150,7 +150,7 @@ with tab2:
     # -- Question 3 -- 
     Question_three = st.radio(
         "Whats the outfit of the day?",
-        ("Sweats and Hoodie" , "PJs!"  "Dressed Up " "Bussiness Casual", "Jeans and a Top", "Something basic")
+        ("Sweats and Hoodie" , "PJs!" ,  "Dressed Up " "Bussiness Casual", "Jeans and a Top", "Something basic")
     )
 
     if Question_three == "Dressed Up":
