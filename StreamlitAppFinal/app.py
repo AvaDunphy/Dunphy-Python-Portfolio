@@ -129,7 +129,7 @@ with tab2:
     elif Question_one == "Hang out with Friends 👯":
         mood_scores["Happy"] += 1
     elif Question_one == "Sitting in bed eating ice cream 🍨":
-        mood_scores[" Sad "] += 1
+        mood_scores["Sad"] += 1
     elif Question_one == "Do Nothing 🤷‍♀️" : 
         mood_scores["Quiet"] += 1
 
@@ -137,17 +137,17 @@ with tab2:
     st.markdown("#### **2.What are we drinking right now?**")
     Question_two = st.radio(
         "",
-        ("🍸" , "Tea & Honey 🫖", " Coffee ☕️", "Water 💧", "Milkshake 🥤")
+        ("🍸" , "Tea & Honey 🫖", "Coffee ☕️", "Water 💧", "Milkshake 🥤")
     )
 
     if Question_two == "🍸":
         mood_scores["Excited"] += 1 
     elif Question_two == "Tea & Honey 🫖":
         mood_scores["Chill "] +=  1
-    elif Question_two == " Coffee ☕️":
+    elif Question_two == "Coffee ☕️":
         mood_scores["Happy"] += 1
     elif Question_two == "Milkshake 🥤":
-        mood_scores[" Sad "] += 1
+        mood_scores["Sad"] += 1
     elif Question_two == "Water 💧 " : 
         mood_scores["Quiet"] += 1
 
@@ -165,7 +165,7 @@ with tab2:
     elif Question_three == "Jeans and a Top 👚":
         mood_scores["Happy"] += 1
     elif Question_three == "Sweats and Hoodie 🧥":
-        mood_scores[" Sad "] += 1
+        mood_scores["Sad"] += 1
     elif Question_three == "Something basic 👔" : 
         mood_scores["Quiet"] += 1
 
@@ -183,7 +183,7 @@ with tab2:
     elif Question_four == "Hang with Friends 😜":
         mood_scores["Happy"] += 1
     elif Question_four == "Be alone 🙂":
-        mood_scores[" Sad "] += 1
+        mood_scores["Sad"] += 1
     elif Question_four == "Read a Book 📚 " : 
         mood_scores["Quiet"] += 1
 
@@ -201,7 +201,7 @@ with tab2:
     elif Question_five == "Yellow 🍋":
         mood_scores["Happy"] += 1
     elif Question_five == "Blue 🐟":
-        mood_scores[" Sad "] += 1
+        mood_scores["Sad"] += 1
     elif Question_five == "Brown 🐻" : 
         mood_scores["Quiet"] += 1
     
@@ -209,7 +209,7 @@ with tab2:
     if st.button("Submit Quiz!"):
     # Determine the mood with the highest score
         detected_mood = max(mood_scores, key=mood_scores.get)
-        
+
         st.subheader(f"Listen to music that follows this...{detected_mood}!")
 
 # Tab 3 - Recomendations (Based on mood you should listen to ...)
