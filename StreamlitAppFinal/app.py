@@ -43,13 +43,14 @@ tab1, tab2, tab3, tab4 = st.tabs(["📊 Music Data", "📝 Take Mood Quiz", "�
 
 # Tab 1 - Data Table For Research 
 with tab1:
-    st.title("What are people listening to? 🤷‍♀️")
+    st.header("Let's Look At The Data 👨‍💻")
+    st.subheader("What are people listening to? 🤷‍♀️")
     st.write(" blah blah blah, heres what the data is, what it shows, what you can do, how it helps")
     # First, inputting the data set into the machine
     csv_path = "/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/musicdataset.csv"
     df = pd.read_csv(csv_path)
     # Second, making some titles
-    st.header("🎵 Spotify Data Preview")
+    st.subheader("🎵 Spotify Data Preview")
     st.write("Below you will find BLAH BLAH BLAH -- Lets take a look at the first ten rows of the data set:")
 
     # Third, Let's clean up the data set a little bit
@@ -105,12 +106,12 @@ with tab1:
 # Tab 2 - Mood Quiz (5 Questions and Result)
 with tab2:
     st.header("📝 Mood Quiz")
-    st.write("five questions, lets find out what music you should listen to based on your mood")
+    st.write("Let's take a look at what kind of mood you're feeling right now")
     
     mood_scores = { 
         "Happy" : 0, 
-        " Sad " : 0, 
-        "Chill " : 0, 
+        "Sad" : 0, 
+        "Chill" : 0, 
         "Excited" : 0,
         "Quiet" : 0
     }
@@ -205,11 +206,11 @@ with tab2:
         mood_scores["Quiet"] += 1
     
     # --- Submit Button & Result Button --- 
-    if st.button("Submit"):
+    if st.button("Submit Quiz!"):
     # Determine the mood with the highest score
         detected_mood = max(mood_scores, key=mood_scores.get)
-
-        st.subheader(f"AND THE VIBE IS >>>> {detected_mood}!")
+        
+        st.subheader(f"Listen to music that follows this...{detected_mood}!")
 
 # Tab 3 - Recomendations (Based on mood you should listen to ...)
 with tab3:
