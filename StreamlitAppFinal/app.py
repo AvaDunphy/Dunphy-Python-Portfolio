@@ -172,7 +172,7 @@ with tab1:
     elif filter_by == "Danceability":
         min_Danceability = float(df_clean['Danceability'].min())
         max_Danceability = float(df_clean['Danceability'].max())
-        selected_Danceability = st.slider("Select Danceability Level:", float(min_Danceability), float(max_Danceability), (-100.0, 100.0))
+        selected_Danceability = st.slider("Select Danceability Level:", float(min_Danceability), float(max_Danceability), (0.00, .9999))
         filtered_df = df_clean[
             (df_clean['Danceability'] >= selected_Danceability[0]) & (df_clean['Danceability'] <= selected_Danceability[1])
         ]
