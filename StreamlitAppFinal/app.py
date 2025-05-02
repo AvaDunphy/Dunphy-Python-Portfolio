@@ -115,6 +115,15 @@ with tab1:
         ]
         st.write(f"Showing songs with tempo between {selected_energy[0]:.1f} and {selected_energy[1]:.1f} BPM:")
         st.dataframe(filtered_df)
+    elif filter_by == "Instrumentalness":
+        min_Instrumentalness = float(df_clean['Instrumentalness'].min())
+        max_Instrumentalness = float(df_clean['Instrumentalness'].max())
+        selected_Instrumentalness = st.slider("Select Instrumentalness Level:", float(min_Instrumentalness), float(max_Instrumentalness), (0.0, 0.9999))
+        filtered_df = df_clean[
+            (df_clean['Instrumentalness'] >= selected_Instrumentalness[0]) & (df_clean['Instrumentalness'] <= selected_Instrumentalness[1])
+        ]
+        st.write(f"Showing songs with Instrumentalness between {selected_Instrumentalness[0]:.1f} and {selected_Instrumentalness[1]:.1f} BPM:")
+        st.dataframe(filtered_df)
     else:
         st.info("Use the dropdown above to filter the dataset.")
 
