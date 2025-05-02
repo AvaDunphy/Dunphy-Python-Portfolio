@@ -306,3 +306,6 @@ with tab4:
     "I am going to open this app to help me out. 🤗🎻")
     st.subheader("Below find some of my personal favorites 🫶🏻")
 
+    image = Image.open("/mnt/data/Screenshot 2025-05-02 at 12.58.35 PM.png")
+    st.image(image, width=300, caption="Frank Ocean – Blond")
+
