@@ -45,7 +45,13 @@ tab1, tab2, tab3, tab4 = st.tabs(["📊 Music Data", "📝 Take Mood Quiz", "�
 with tab1:
     st.header("Let's Look At The Data 👨‍💻")
     st.subheader("What are people listening to? 🤷‍♀️")
-    st.write(" blah blah blah, heres what the data is, what it shows, what you can do, how it helps")
+    st.write(" With millions of songs out there, it is almost impossible to try and figure out what to listen to. " \
+    "So, let me help you out a little! Below find a data set with thousands of the most popular songs on Spotify. This way if you are unsure what you want to play, " \
+    "you can just look below! Also, if you are trying to find a specific artist, genre, song, tempo, or popularity, use the filter " \
+    "program to zone in on your search. While looking, please keep in mind that there are so so many songs out in the world, and this data set might not have everything, " \
+    "BUT it can sure give you a good idea of what you can listen to." \
+    "Thank you! And sit back, relax, and enjoy some good music 🫶🏻")
+    
     # First, inputting the data set into the machine
     csv_path = "/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/musicdataset.csv"
     df = pd.read_csv(csv_path)
