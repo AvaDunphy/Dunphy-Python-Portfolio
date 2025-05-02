@@ -51,13 +51,13 @@ with tab1:
     "program to zone in on your search. While looking, please keep in mind that there are so so many songs out in the world, and this data set might not have everything, " \
     "BUT it can sure give you a good idea of what you can listen to." \
     "Thank you! And sit back, relax, and enjoy some good music 🫶🏻")
-    
+
     # First, inputting the data set into the machine
     csv_path = "/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/musicdataset.csv"
     df = pd.read_csv(csv_path)
     # Second, making some titles
     st.subheader("🎵 Spotify Data Preview")
-    st.write("Below you will find BLAH BLAH BLAH -- Lets take a look at the first ten rows of the data set:")
+    st.write("Below find the cleaned up data set with thousands of songs! 🎷 ")
 
     # Third, Let's clean up the data set a little bit
     df_clean = df.drop(columns=['track_id', 'duration_ms', "Unnamed: 0"]) # This line allows me to drop some files that I didn't want showing
@@ -73,7 +73,7 @@ with tab1:
 
     # Create sidebar or expandable filters if needed
     filter_by = st.selectbox("Choose what you'd like to filter by:", 
-                             ["None", "Track Genre", "Artist", "Popularity", "Tempo"])
+                             ["None", "Track Genre", "Artist", "Popularity", "Tempo", "Energy", "Instrumentalness", "Valence", "Liveness", "Acousticness", "Speechiness", "Loudness", "Danceability"])
 
     # Apply selected filter
     if filter_by == "Track Genre":
@@ -105,6 +105,15 @@ with tab1:
             (df_clean['Tempo'] >= selected_tempo[0]) & (df_clean['Tempo'] <= selected_tempo[1])
         ]
         st.write(f"Showing songs with tempo between {selected_tempo[0]:.1f} and {selected_tempo[1]:.1f} BPM:")
+        st.dataframe(filtered_df)
+    elif filter_by = "Energy":
+        min_energy = float(df_clean['Energy'].min())
+        max_energy = float(df_clean['Energy'].max())
+        selected_energy = st.slider("Select Energy Level:", float(min_energy), float(max_energy), (0.0, 0.9999))
+        filtered_df = df_clean[
+            (df_clean['Energy'] >= selected_energy[0]) & (df_clean['Tempo'] <= selected_energy[1])
+        ]
+        st.write(f"Showing songs with tempo between {selected_energy[0]:.1f} and {selected_energy[1]:.1f} BPM:")
         st.dataframe(filtered_df)
     else:
         st.info("Use the dropdown above to filter the dataset.")
