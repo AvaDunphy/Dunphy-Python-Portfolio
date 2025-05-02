@@ -142,6 +142,15 @@ with tab1:
         ]
         st.write(f"Showing songs with Liveness between {selected_Liveness[0]:.1f} and {selected_Liveness[1]:.1f} BPM:")
         st.dataframe(filtered_df)
+    elif filter_by == "Acousticness":
+        min_Acousticness = float(df_clean['Acousticness'].min())
+        max_Acousticness = float(df_clean['Acousticness'].max())
+        selected_Acousticness = st.slider("Select Acousticness Level:", float(min_Acousticness), float(max_Acousticness), (0.0, 0.9999))
+        filtered_df = df_clean[
+            (df_clean['Acousticness'] >= selected_Acousticness[0]) & (df_clean['Acousticness'] <= selected_Acousticness[1])
+        ]
+        st.write(f"Showing songs with Acousticness between {selected_Acousticness[0]:.1f} and {selected_Acousticness[1]:.1f} BPM:")
+        st.dataframe(filtered_df)
     else:
         st.info("Use the dropdown above to filter the dataset.")
 
