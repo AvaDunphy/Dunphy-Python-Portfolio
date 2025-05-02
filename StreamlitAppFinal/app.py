@@ -106,7 +106,7 @@ with tab1:
         ]
         st.write(f"Showing songs with tempo between {selected_tempo[0]:.1f} and {selected_tempo[1]:.1f} BPM:")
         st.dataframe(filtered_df)
-    elif filter_by = "Energy":
+    elif filter_by == "Energy":
         min_energy = float(df_clean['Energy'].min())
         max_energy = float(df_clean['Energy'].max())
         selected_energy = st.slider("Select Energy Level:", float(min_energy), float(max_energy), (0.0, 0.9999))
