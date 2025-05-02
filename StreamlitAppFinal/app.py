@@ -163,7 +163,7 @@ with tab1:
     elif filter_by == "Loudness":
         min_Loudness = float(df_clean['Loudness'].min())
         max_Loudness = float(df_clean['Loudness'].max())
-        selected_Loudness = st.slider("Select Loudness Level:", float(min_Loudness), float(max_Loudness), (0.0, 0.9999))
+        selected_Loudness = st.slider("Select Loudness Level:", float(min_Loudness), float(max_Loudness), (-100.0, 100.0))
         filtered_df = df_clean[
             (df_clean['Loudness'] >= selected_Loudness[0]) & (df_clean['Loudness'] <= selected_Loudness[1])
         ]
