@@ -160,6 +160,15 @@ with tab1:
         ]
         st.write(f"Showing songs with Speechiness between {selected_Speechiness[0]:.1f} and {selected_Speechiness[1]:.1f} BPM:")
         st.dataframe(filtered_df)
+    elif filter_by == "Loudness":
+        min_Loudness = float(df_clean['Loudness'].min())
+        max_Loudness = float(df_clean['Loudness'].max())
+        selected_Loudness = st.slider("Select Loudness Level:", float(min_Loudness), float(max_Loudness), (0.0, 0.9999))
+        filtered_df = df_clean[
+            (df_clean['Loudness'] >= selected_Loudness[0]) & (df_clean['Loudness'] <= selected_Loudness[1])
+        ]
+        st.write(f"Showing songs with Loudness between {selected_Loudness[0]:.1f} and {selected_Loudness[1]:.1f} BPM:")
+        st.dataframe(filtered_df)
     else:
         st.info("Use the dropdown above to filter the dataset.")
 
