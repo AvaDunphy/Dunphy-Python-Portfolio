@@ -125,7 +125,7 @@ with tab2:
     if Question_one == "Going to a party 💃":
         mood_scores["Excited"] += 1 
     elif Question_one == "Staying home and reading 📖":
-        mood_scores["Chill "] +=  1
+        mood_scores["Chill"] +=  1
     elif Question_one == "Hang out with Friends 👯":
         mood_scores["Happy"] += 1
     elif Question_one == "Sitting in bed eating ice cream 🍨":
@@ -143,7 +143,7 @@ with tab2:
     if Question_two == "🍸":
         mood_scores["Excited"] += 1 
     elif Question_two == "Tea & Honey 🫖":
-        mood_scores["Chill "] +=  1
+        mood_scores["Chill"] +=  1
     elif Question_two == "Coffee ☕️":
         mood_scores["Happy"] += 1
     elif Question_two == "Milkshake 🥤":
@@ -161,7 +161,7 @@ with tab2:
     if Question_three == "Dressed Up 🕺":
         mood_scores["Excited"] += 1 
     elif Question_three == "PJs! 🧦":
-        mood_scores["Chill "] +=  1
+        mood_scores["Chill"] +=  1
     elif Question_three == "Jeans and a Top 👚":
         mood_scores["Happy"] += 1
     elif Question_three == "Sweats and Hoodie 🧥":
@@ -179,7 +179,7 @@ with tab2:
     if Question_four == "Go Out 🎉 ":
         mood_scores["Excited"] += 1 
     elif Question_four == "Cook 🧑‍🍳":
-        mood_scores["Chill "] +=  1
+        mood_scores["Chill"] +=  1
     elif Question_four == "Hang with Friends 😜":
         mood_scores["Happy"] += 1
     elif Question_four == "Be alone 🙂":
@@ -197,7 +197,7 @@ with tab2:
     if Question_five == "Red 🍓 ":
         mood_scores["Excited"] += 1 
     elif Question_five == "Green 🌲":
-        mood_scores["Chill "] +=  1
+        mood_scores["Chill"] +=  1
     elif Question_five == "Yellow 🍋":
         mood_scores["Happy"] += 1
     elif Question_five == "Blue 🐟":
