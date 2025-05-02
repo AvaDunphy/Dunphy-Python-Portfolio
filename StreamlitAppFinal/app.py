@@ -300,5 +300,9 @@ with tab3:
 # Tab 4 - About
 with tab4:
     st.header(" ℹ️ About")
-    st.write("This app was built to help you discover new music based on your mood. Enjoy!")
+    st.write("This app was built to help user find new music based off their mood. I wanted to try and create an app which " \
+    "would allow for user to branch out, listening to something new or find the best vibe. I personally am a huge music fan and need music" \
+    "every moment of every day in order to be productive. So now, when I am not sure what I should listen to " \
+    "I am going to open this app to help me out. 🤗🎻")
+    st.subheader("Below find some of my personal favorites 🫶🏻")
 
