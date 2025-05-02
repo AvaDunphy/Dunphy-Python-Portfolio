@@ -140,7 +140,7 @@ with tab1:
         filtered_df = df_clean[
             (df_clean['Livenes'] >= selected_Livenes[0]) & (df_clean['Livenes'] <= selected_Livenes[1])
         ]
-        st.write(f"Showing songs with Valence between {selected_Livenes[0]:.1f} and {selected_Livenes[1]:.1f} BPM:")
+        st.write(f"Showing songs with Liveness between {selected_Livenes[0]:.1f} and {selected_Livenes[1]:.1f} BPM:")
         st.dataframe(filtered_df)
     else:
         st.info("Use the dropdown above to filter the dataset.")
