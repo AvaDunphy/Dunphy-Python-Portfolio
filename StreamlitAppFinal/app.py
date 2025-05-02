@@ -133,6 +133,15 @@ with tab1:
         ]
         st.write(f"Showing songs with Valence between {selected_Valence[0]:.1f} and {selected_Valence[1]:.1f} BPM:")
         st.dataframe(filtered_df)
+    elif filter_by == "Liveness":
+        min_Liveness = float(df_clean['Liveness'].min())
+        max_Liveness = float(df_clean['Liveness'].max())
+        selected_Liveness = st.slider("Select Liveness Level:", float(min_Liveness), float(max_Liveness), (0.0, 0.9999))
+        filtered_df = df_clean[
+            (df_clean['Liveness'] >= selected_Liveness[0]) & (df_clean['Liveness'] <= selected_Liveness[1])
+        ]
+        st.write(f"Showing songs with Valence between {selected_Valence[0]:.1f} and {selected_Valence[1]:.1f} BPM:")
+        st.dataframe(filtered_df)
     else:
         st.info("Use the dropdown above to filter the dataset.")
 
