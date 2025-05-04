@@ -308,5 +308,5 @@ with tab4:
 
     st.write(" Nights - Frank Ocean ")
 
-    image = Image.open("images/blond_album.jpeg")
+    image = Image.open("/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/Blond Album .textClipping")
     st.image(image, caption="Frank Ocean - Blond", width=300)
