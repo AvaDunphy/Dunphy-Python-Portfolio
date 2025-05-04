@@ -306,5 +306,7 @@ with tab4:
     "I am going to open this app to help me out. 🤗🎻")
     st.subheader("Below find some of my personal favorites 🫶🏻")
 
+    st.write(" Nights - Frank Ocean ")
+    <img src="images/blond_album.jpeg" width="300" alt="Frank Ocean - Blond Album Cover">
 
 
