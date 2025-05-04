@@ -288,7 +288,7 @@ with tab2:
     # Determine the mood with the highest score
         detected_mood = max(mood_scores, key=mood_scores.get)
 
-        st.subheader(f"Listen to music that follows this...{detected_mood}!")
+        st.subheader(f"Listen to music that follows an {detected_mood} vibe!")
 
 # Tab 3 - Recomendations (Based on mood you should listen to ...)
 with tab3:
