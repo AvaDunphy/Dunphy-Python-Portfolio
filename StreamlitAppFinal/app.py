@@ -307,6 +307,6 @@ with tab4:
     st.subheader("Below find some of my personal favorites 🫶🏻")
 
     st.write(" Nights - Frank Ocean ")
-    <img src="images/blond_album.jpeg" width="300" alt="Frank Ocean - Blond Album Cover">
 
-
+    image = Image.open("images/blond_album.jpeg")
+    st.image(image, caption="Frank Ocean - Blond", width=300)
