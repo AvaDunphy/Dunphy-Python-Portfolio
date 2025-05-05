@@ -3,7 +3,6 @@ import spacy
 from spacy.pipeline import EntityRuler
 from spacy import displacy
 import pandas as pd
-from PIL import Image
 nlp = spacy.load("en_core_web_sm")
 
 import kagglehub
@@ -308,5 +307,3 @@ with tab4:
 
     st.write(" Nights - Frank Ocean ")
 
-    image = Image.open("/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/Blond Album .textClipping")
-    st.image(image, caption="Frank Ocean - Blond", width=300)
