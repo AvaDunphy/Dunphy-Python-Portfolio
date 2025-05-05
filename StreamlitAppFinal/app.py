@@ -314,10 +314,8 @@ with tab3:
         }, 
         "Excited" : { 
             "Danceability" : (0.8, .99),
-            "Energy" : (0.8, .99),
-            "Loudness" : (70.0, 100.0),
-            "Valence" : (0.8, 0.999),
-            "Tempo" : (200.0, 243.37), 
+            "Energy" : (0.4, .99),
+            "Valence" : (0.5, 0.999)
 
         }, 
         "Chill" : { 
