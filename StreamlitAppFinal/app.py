@@ -376,7 +376,7 @@ with tab3:
     st.subheader(f"🎵 Songs for a {mood_score} Mood")
     st.write(f"Based on mood-matching features like {', '.join(filters.keys())}, here are some top song picks:")
 
-    st.dataframe(filtered_songs[["Track Name", "Artists", "Track Genre"]].head(20))
+    st.dataframe(filtered_songs[["Track Name", "Artists", "Track Genre"]].head(100))
 
 
 
