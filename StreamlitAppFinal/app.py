@@ -295,8 +295,89 @@ with tab3:
     st.write("So, don't forget your what mood you were given based on your quiz OR what you're feeling right now! Below find some" \
     "peramiters that you can use to zone in on what kind of music you want to hear. Simply follow the BLHA BLAH BLAH BLAH")
 
-    st.selectbox(" Select Which Mood You Recived in Tab Two")
-    mood_scores = st.selectbox("Choose Your Mood:", ["Excited", "Chill", "Happy", "Sad", "Quiet"])
+    # What is the mood score that the audience recived
+    st.subheader(" Select Which Mood You Recived in Tab Two")
+    mood_score = st.selectbox("Choose Your Mood:", ["Excited", "Chill", "Happy", "Sad", "Quiet"])
+
+    # Filter the Moods and the songs in the data set 
+    mood_filter = { 
+
+        "Happy" : { 
+            "Danceability" : (0.5, .99),
+            "Energy" : (0.6, .99),
+            "Loudness" : (50.0, 100.0),
+            "Sppechiness" : (0.5, .999),
+            "Acousticness" : (0.6, .999),
+            "Instrumentalness" : (0.0, 0.5),
+            "Liveness" : (0.7, 0.999),
+            "Valence" : (0.7, 0.999),
+            "Tempo" : (100.0, 243.37), 
+
+        }, 
+        "Excited" : { 
+            "Danceability" : (0.8, .99),
+            "Energy" : (0.8, .99),
+            "Loudness" : (70.0, 100.0),
+            "Sppechiness" : (0.5, .999),
+            "Acousticness" : (0.3, .999),
+            "Instrumentalness" : (0.0, 0.6),
+            "Liveness" : (0.8, 0.999),
+            "Valence" : (0.8, 0.999),
+            "Tempo" : (200.0, 243.37), 
+
+        }, 
+        "Chill" : { 
+            "Danceability" : (0.3, .7),
+            "Energy" : (0.3, .6),
+            "Loudness" : (00.0, 50.0),
+            "Sppechiness" : (0.2, .5),
+            "Acousticness" : (0.1, .6),
+            "Instrumentalness" : (0.0, 0.5),
+            "Liveness" : (0.2, 0.6),
+            "Valence" : (0.3, 0.8),
+            "Tempo" : (20.0, 150.00), 
+
+        }, 
+        "Sad" : { 
+            "Danceability" : (0.0, .4),
+            "Energy" : (0.0, .4),
+            "Loudness" : (00.0, 30.0),
+            "Sppechiness" : (0.2, .5),
+            "Acousticness" : (0.0, .4),
+            "Instrumentalness" : (0.0, 0.5),
+            "Liveness" : (0.0, 0.3),
+            "Valence" : (0.0, 0.4),
+            "Tempo" : (00.0, 100.00), 
+        }, 
+        "Quiet" : { 
+            "Danceability" : (0.0, .5),
+            "Energy" : (0.0, .4),
+            "Loudness" : (00.0, 60.0),
+            "Sppechiness" : (0.2, .7),
+            "Acousticness" : (0.0, .6),
+            "Instrumentalness" : (0.0, 0.7),
+            "Liveness" : (0.0, 0.3),
+            "Valence" : (0.0, 0.4),
+            "Tempo" : (00.0, 100.00), 
+        }
+    }
+
+      # Apply filtering
+    filters = mood_filters[mood_option]
+    filtered_songs = df_clean.copy()
+
+    for feature, (low, high) in filters.items():
+        if feature in filtered_songs.columns:
+            filtered_songs = filtered_songs[
+                (filtered_songs[feature] >= low) & (filtered_songs[feature] <= high)
+            ]
+
+    # Show top recommended songs with genre
+    st.subheader(f"🎵 Songs for a {mood_option} Mood")
+    st.write(f"Based on mood-matching features like {', '.join(filters.keys())}, here are some top song picks:")
+
+    st.dataframe(filtered_songs[["Track Name", "Artists", "Track Genre", "Valence", "Energy", "Danceability"]].head(20))
+
 
 
 # Tab 4 - About
