@@ -300,20 +300,22 @@ with tab3:
     mood_score = st.selectbox("Choose Your Mood:", ["Excited", "Chill", "Happy", "Sad", "Quiet"])
 
     # Filter the Moods and the songs in the data set 
+    ## QUESTION IS IT OK I DON"T NIT PICK EACH ONE
     mood_filter = { 
 
         "Happy" : { 
-            "Danceability" : (0.5, .99) 
+            "Danceability" : (0.5, .99),
+            "Energy" : (0.6, .99),
+            "Acousticness" : (0.6, .999),
+            "Liveness" : (0.7, 0.999),
+            "Valence" : (0.7, 0.999),
+            "Tempo" : (100.0, 243.37),
 
         }, 
         "Excited" : { 
             "Danceability" : (0.8, .99),
             "Energy" : (0.8, .99),
             "Loudness" : (70.0, 100.0),
-            "Sppechiness" : (0.5, .999),
-            "Acousticness" : (0.3, .999),
-            "Instrumentalness" : (0.0, 0.6),
-            "Liveness" : (0.8, 0.999),
             "Valence" : (0.8, 0.999),
             "Tempo" : (200.0, 243.37), 
 
