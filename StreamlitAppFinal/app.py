@@ -363,7 +363,7 @@ with tab3:
     }
 
       # Apply filtering
-    filters = mood_filters[mood_option]
+    filters = mood_filter[mood_score]
     filtered_songs = df_clean.copy()
 
     for feature, (low, high) in filters.items():
