@@ -295,6 +295,9 @@ with tab3:
     st.write("So, don't forget your what mood you were given based on your quiz OR what you're feeling right now! Below find some" \
     "peramiters that you can use to zone in on what kind of music you want to hear. Simply follow the BLHA BLAH BLAH BLAH")
 
+    st.selectbox(" Select Which Mood You Recived in Tab Two")
+    mood_scores = st.selectbox("Choose Your Mood:", ["Excited", "Chill", "Happy", "Sad", "Quiet"])
+
 
 # Tab 4 - About
 with tab4:
@@ -306,4 +309,3 @@ with tab4:
     st.subheader("Below find some of my personal favorites 🫶🏻")
 
     st.write(" Nights - Frank Ocean ")
-
