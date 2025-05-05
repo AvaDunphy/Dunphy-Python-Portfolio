@@ -303,15 +303,7 @@ with tab3:
     mood_filter = { 
 
         "Happy" : { 
-            "Danceability" : (0.5, .99),
-            "Energy" : (0.6, .99),
-            "Loudness" : (50.0, 100.0),
-            "Sppechiness" : (0.5, .999),
-            "Acousticness" : (0.6, .999),
-            "Instrumentalness" : (0.0, 0.5),
-            "Liveness" : (0.7, 0.999),
-            "Valence" : (0.7, 0.999),
-            "Tempo" : (100.0, 243.37), 
+            "Danceability" : (0.5, .99) 
 
         }, 
         "Excited" : { 
