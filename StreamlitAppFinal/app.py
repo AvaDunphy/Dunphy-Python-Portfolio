@@ -307,6 +307,7 @@ with tab3:
             "Danceability" : (0.5, .99),
             "Energy" : (0.6, .99),
             "Acousticness" : (0.6, .999),
+            "Instrumentalness" : (0.0, 0.5),
             "Liveness" : (0.7, 0.999),
             "Valence" : (0.7, 0.999),
             "Tempo" : (100.0, 243.37),
@@ -314,7 +315,14 @@ with tab3:
         }, 
         "Excited" : { 
             "Danceability" : (0.8, .99),
-            "Energy" : (0.4, .99)
+            "Energy" : (0.8, .99),
+            "Loudness" : (70.0, 100.0),
+            "Sppechiness" : (0.5, .999),
+            "Acousticness" : (0.3, .999),
+            "Instrumentalness" : (0.0, 0.6),
+            "Liveness" : (0.8, 0.999),
+            "Valence" : (0.8, 0.999),
+            "Tempo" : (200.0, 243.37), 
 
         }, 
         "Chill" : { 
@@ -353,7 +361,8 @@ with tab3:
         }
     }
 
-      # Apply filtering
+      # Apply the filters 
+      # IM SORRY BUT HOW DO I DO THIS??? 
     filters = mood_filter[mood_score]
     filtered_songs = df_clean.copy()
 
@@ -367,11 +376,12 @@ with tab3:
     st.subheader(f"🎵 Songs for a {mood_score} Mood")
     st.write(f"Based on mood-matching features like {', '.join(filters.keys())}, here are some top song picks:")
 
-    st.dataframe(filtered_songs[["Track Name", "Artists", "Track Genre", "Valence", "Energy", "Danceability"]].head(20))
+    st.dataframe(filtered_songs[["Track Name", "Artists", "Track Genre"]].head(20))
 
 
 
 # Tab 4 - About
+## QUESTION WHY CAN'T THE PHOTOS BE ENTERED IN WHAT
 with tab4:
     st.header(" ℹ️ About")
     st.write("This app was built to help user find new music based off their mood. I wanted to try and create an app which " \
