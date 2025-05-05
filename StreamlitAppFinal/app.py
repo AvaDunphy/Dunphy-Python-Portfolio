@@ -288,6 +288,7 @@ with tab2:
         detected_mood = max(mood_scores, key=mood_scores.get)
 
         st.subheader(f"Listen to music that follows a {detected_mood} vibe!")
+    st.write(mood_scores)
 
 # Tab 3 - Recomendations (Based on mood you should listen to ...)
 with tab3:
@@ -297,7 +298,7 @@ with tab3:
 
     # What is the mood score that the audience recived
     st.subheader(" Select Which Mood You Recived in Tab Two")
-    mood_score = st.selectbox("Choose Your Mood:", ["Excited", "Chill", "Happy", "Sad", "Quiet"])
+    mood_select = st.selectbox("Choose Your Mood:", ["Excited", "Chill", "Happy", "Sad", "Quiet"])
 
     # Filter the Moods and the songs in the data set 
     ## QUESTION IS IT OK I DON"T NIT PICK EACH ONE
@@ -317,7 +318,7 @@ with tab3:
             "Danceability" : (0.8, .99),
             "Energy" : (0.8, .99),
             "Loudness" : (70.0, 100.0),
-            "Sppechiness" : (0.5, .999),
+            #"Speechiness" : (0.5, .999),
             "Acousticness" : (0.3, .999),
             "Instrumentalness" : (0.0, 0.6),
             "Liveness" : (0.8, 0.999),
@@ -329,7 +330,7 @@ with tab3:
             "Danceability" : (0.3, .7),
             "Energy" : (0.3, .6),
             "Loudness" : (00.0, 50.0),
-            "Sppechiness" : (0.2, .5),
+            #"Speechiness" : (0.2, .5),
             "Acousticness" : (0.1, .6),
             "Instrumentalness" : (0.0, 0.5),
             "Liveness" : (0.2, 0.6),
@@ -341,7 +342,7 @@ with tab3:
             "Danceability" : (0.0, .4),
             "Energy" : (0.0, .4),
             "Loudness" : (00.0, 30.0),
-            "Sppechiness" : (0.2, .5),
+            #"Speechiness" : (0.2, .5),
             "Acousticness" : (0.0, .4),
             "Instrumentalness" : (0.0, 0.5),
             "Liveness" : (0.0, 0.3),
@@ -352,7 +353,7 @@ with tab3:
             "Danceability" : (0.0, .5),
             "Energy" : (0.0, .4),
             "Loudness" : (00.0, 60.0),
-            "Sppechiness" : (0.2, .7),
+            #"Speechiness" : (0.2, .7),
             "Acousticness" : (0.0, .6),
             "Instrumentalness" : (0.0, 0.7),
             "Liveness" : (0.0, 0.3),
@@ -363,20 +364,29 @@ with tab3:
 
       # Apply the filters 
       # IM SORRY BUT HOW DO I DO THIS??? 
-    filters = mood_filter[mood_score]
-    filtered_songs = df_clean.copy()
 
-    for feature, (low, high) in filters.items():
-        if feature in filtered_songs.columns:
-            filtered_songs = filtered_songs[
-                (filtered_songs[feature] >= low) & (filtered_songs[feature] <= high)
+    st.header("🌈 Sample Songs for Every Mood")
+
+    # Loop through each mood and display 3 matching songs
+    for mood_name, criteria in mood_filter.items():
+        st.subheader(f"🎧 Mood: {mood_name}")
+
+        # Start with full dataset
+        mood_df = df_clean.copy()
+
+        # Apply filters
+        for feature, (low, high) in criteria.items():
+            feature_title = feature.title()
+            if feature_title in mood_df.columns:
+                mood_df = mood_df[
+                    (mood_df[feature_title] >= low) & (mood_df[feature_title] <= high)
             ]
 
-    # Show top recommended songs with genre
-    st.subheader(f"🎵 Songs for a {mood_score} Mood")
-    st.write(f"Based on mood-matching features like {', '.join(filters.keys())}, here are some top song picks:")
-
-    st.dataframe(filtered_songs[["Track Name", "Artists", "Track Genre"]].head(100))
+        # Show a few songs for this mood
+        if not mood_df.empty:
+            st.dataframe(mood_df[["Track Name", "Artists", "Track Genre"]].head(3))
+        else:
+            st.write("No matching songs found in dataset for this mood 😢")
 
 
 
