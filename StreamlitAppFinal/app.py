@@ -314,8 +314,7 @@ with tab3:
         }, 
         "Excited" : { 
             "Danceability" : (0.8, .99),
-            "Energy" : (0.4, .99),
-            "Valence" : (0.5, 0.999)
+            "Energy" : (0.4, .99)
 
         }, 
         "Chill" : { 
