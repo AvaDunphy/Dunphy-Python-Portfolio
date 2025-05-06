@@ -307,7 +307,7 @@ with tab3:
         "Happy" : { 
             "Danceability" : (0.5, .99),
             "Energy" : (0.6, .99),
-            "Acousticness" : (0.6, .999),
+            #"Acousticness" : (0.6, .999),
             "Instrumentalness" : (0.0, 0.5),
             "Liveness" : (0.7, 0.999),
             "Valence" : (0.7, 0.999),
@@ -319,7 +319,7 @@ with tab3:
             "Energy" : (0.8, .99),
             "Loudness" : (70.0, 100.0),
             #"Speechiness" : (0.5, .999),
-            "Acousticness" : (0.3, .999),
+            #"Acousticness" : (0.3, .999),
             "Instrumentalness" : (0.0, 0.6),
             "Liveness" : (0.8, 0.999),
             "Valence" : (0.8, 0.999),
@@ -331,7 +331,7 @@ with tab3:
             "Energy" : (0.3, .6),
             "Loudness" : (00.0, 50.0),
             #"Speechiness" : (0.2, .5),
-            "Acousticness" : (0.1, .6),
+            #"Acousticness" : (0.1, .6),
             "Instrumentalness" : (0.0, 0.5),
             "Liveness" : (0.2, 0.6),
             "Valence" : (0.3, 0.8),
@@ -343,7 +343,7 @@ with tab3:
             "Energy" : (0.0, .4),
             "Loudness" : (00.0, 30.0),
             #"Speechiness" : (0.2, .5),
-            "Acousticness" : (0.0, .4),
+            #"Acousticness" : (0.0, .4),
             "Instrumentalness" : (0.0, 0.5),
             "Liveness" : (0.0, 0.3),
             "Valence" : (0.0, 0.4),
@@ -354,7 +354,7 @@ with tab3:
             "Energy" : (0.0, .4),
             "Loudness" : (00.0, 60.0),
             #"Speechiness" : (0.2, .7),
-            "Acousticness" : (0.0, .6),
+            #"Acousticness" : (0.0, .6),
             "Instrumentalness" : (0.0, 0.7),
             "Liveness" : (0.0, 0.3),
             "Valence" : (0.0, 0.4),
@@ -364,29 +364,28 @@ with tab3:
 
       # Apply the filters 
       # IM SORRY BUT HOW DO I DO THIS??? 
+      # Copy dataset for filtering
+    filtered_songs = df_clean.copy()
 
-    st.header("🌈 Sample Songs for Every Mood")
+    # Get filter settings for selected mood
+    filters = mood_filter[mood_select]
 
-    # Loop through each mood and display 3 matching songs
-    for mood_name, criteria in mood_filter.items():
-        st.subheader(f"🎧 Mood: {mood_name}")
-
-        # Start with full dataset
-        mood_df = df_clean.copy()
-
-        # Apply filters
-        for feature, (low, high) in criteria.items():
-            feature_title = feature.title()
-            if feature_title in mood_df.columns:
-                mood_df = mood_df[
-                    (mood_df[feature_title] >= low) & (mood_df[feature_title] <= high)
+    # Apply each feature range filter
+    for feature, (low, high) in filters.items():
+        column_name = feature.title()  # Match df_clean column names (title case)
+        if column_name in filtered_songs.columns:
+            filtered_songs = filtered_songs[
+                (filtered_songs[column_name] >= low) & (filtered_songs[column_name] <= high)
             ]
-
-        # Show a few songs for this mood
-        if not mood_df.empty:
-            st.dataframe(mood_df[["Track Name", "Artists", "Track Genre"]].head(3))
         else:
-            st.write("No matching songs found in dataset for this mood 😢")
+            st.warning(f"Feature '{feature}' not found in dataset columns.")
+
+    # Show results
+    st.subheader(f"🎶 Songs that match your '{mood_select}' mood")
+    if not filtered_songs.empty:
+        st.dataframe(filtered_songs[["Track Name", "Artists", "Track Genre"]].head(10))
+    else:
+        st.write("😢 No songs match the filter criteria for this mood.")
 
 
 
