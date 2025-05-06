@@ -300,95 +300,88 @@ with tab3:
     st.subheader(" Select Which Mood You Recived in Tab Two")
     mood_select = st.selectbox("Choose Your Mood:", ["Excited", "Chill", "Happy", "Sad", "Quiet"])
 
-    # Filter the Moods and the songs in the data set 
-    ## QUESTION IS IT OK I DON"T NIT PICK EACH ONE
-    mood_filter = { 
+    mood_songs = { 
+        "Happy":[
+            "1. Dancing Queen - Abba",
+                "- https://www.youtube.com/watch?v=xFrGuyw1V8s",
+            "2. Lovely Day - Bill Withers",
+                "- https://www.youtube.com/watch?v=bEeaS6fuUoA",
+            "3. Don't Stop Me Now - Queen",
+                "- https://www.youtube.com/watch?v=HgzGwKwLmgM",
+            "4. Don't Worry, Be Happy - Bobby McFerrin",
+                "- https://www.youtube.com/watch?v=d-diB65scQU",
+            "5. Good Vibrations - Beach Boys",
+                "- https://www.youtube.com/watch?v=apBWI6xrbLY",
+            "6. Unwritten - Natasha Bedingfield",
+                "- https://www.youtube.com/watch?v=b7k0a5hYnSI"
 
-        "Happy" : { 
-            "Danceability" : (0.5, .99),
-            "Energy" : (0.6, .99),
-            #"Acousticness" : (0.6, .999),
-            "Instrumentalness" : (0.0, 0.5),
-            "Liveness" : (0.7, 0.999),
-            "Valence" : (0.7, 0.999),
-            "Tempo" : (100.0, 243.37),
+        ],
+        "Excited":[
+            "1. Paper Planes - M.I.A",
+                "- https://www.youtube.com/watch?v=ewRjZoRtu0Y",
+            "2. Empire State of Mind - Jay Z and Alicia Keys",
+                "- https://www.youtube.com/watch?v=tqKWshKUC5E",
+            "3. Doses & Mimosas - Cherub",
+                "- https://www.youtube.com/watch?v=E45fogGN_Y8",
+            "4. I'm So Excited - The Pointer Sisters",
+                "- https://www.youtube.com/watch?v=rQqwG_rQx7A",
+            "5. I Gotta Feeling - The Black Eyed Peas",
+                "- https://www.youtube.com/watch?v=ipii7KbbJLY",
+            "6. Shake It Off - Taylor Swift",
+                "- https://www.youtube.com/watch?v=mvVBuG4IOW4"
 
-        }, 
-        "Excited" : { 
-            "Danceability" : (0.8, .99),
-            "Energy" : (0.8, .99),
-            "Loudness" : (70.0, 100.0),
-            #"Speechiness" : (0.5, .999),
-            #"Acousticness" : (0.3, .999),
-            "Instrumentalness" : (0.0, 0.6),
-            "Liveness" : (0.8, 0.999),
-            "Valence" : (0.8, 0.999),
-            "Tempo" : (200.0, 243.37), 
-
-        }, 
-        "Chill" : { 
-            "Danceability" : (0.3, .7),
-            "Energy" : (0.3, .6),
-            "Loudness" : (00.0, 50.0),
-            #"Speechiness" : (0.2, .5),
-            #"Acousticness" : (0.1, .6),
-            "Instrumentalness" : (0.0, 0.5),
-            "Liveness" : (0.2, 0.6),
-            "Valence" : (0.3, 0.8),
-            "Tempo" : (20.0, 150.00), 
-
-        }, 
-        "Sad" : { 
-            "Danceability" : (0.0, .4),
-            "Energy" : (0.0, .4),
-            "Loudness" : (00.0, 30.0),
-            #"Speechiness" : (0.2, .5),
-            #"Acousticness" : (0.0, .4),
-            "Instrumentalness" : (0.0, 0.5),
-            "Liveness" : (0.0, 0.3),
-            "Valence" : (0.0, 0.4),
-            "Tempo" : (00.0, 100.00), 
-        }, 
-        "Quiet" : { 
-            "Danceability" : (0.0, .5),
-            "Energy" : (0.0, .4),
-            "Loudness" : (00.0, 60.0),
-            #"Speechiness" : (0.2, .7),
-            #"Acousticness" : (0.0, .6),
-            "Instrumentalness" : (0.0, 0.7),
-            "Liveness" : (0.0, 0.3),
-            "Valence" : (0.0, 0.4),
-            "Tempo" : (00.0, 100.00), 
-        }
+        ],
+        "Chill" :[
+            "1. Time Moves Slow - BADBADNOTGOOD",
+                "- https://www.youtube.com/watch?v=UWIIPX_5rbM",
+            "2. Blondie - Current Joys",
+                "- https://www.youtube.com/watch?v=-dFHXd1dTSk",
+            "3. My Kind of Woman - Mac DeMarco",
+                "- https://www.youtube.com/watch?v=_R3B2Xr8kwQ",
+            "4. Tommy's Party - Peach Pit",
+                "- https://www.youtube.com/watch?v=iMUbmiXlHww"
+            "5. Bad Habit - Steve Lacy",
+                "- https://www.youtube.com/watch?v=S2PVsv2K1Bg"
+            "6. Today - Q",
+                "- https://www.youtube.com/watch?v=rzh7Fjm_IpI"
+        ],
+        "Sad" :[
+            "1. Looking Out for You - Joy Again",
+                "- https://www.youtube.com/watch?v=ZVQDHFgfssM",
+            "2. White Ferrari - Frank Ocean",
+                "- https://www.youtube.com/watch?v=Dlz_XHeUUis",
+            "3. Heart to Heart - Mac DeMarco",
+                "- https://www.youtube.com/watch?v=qBoQzo98EpQ",
+            "4. If This World Were Mine - Luther Vandross," 
+                "- https://www.youtube.com/watch?v=RkFIkubuYns",
+            "5. ROS - Mac Miller",
+                "- https://www.youtube.com/watch?v=-2AfeMnpiRI",
+            "6. Blind - Sza",
+                "- https://www.youtube.com/watch?v=SZbTfC85nVk"
+        ],
+        "Quiet" :[
+            "1. Comming Home - Leaon Bridges",
+                "- https://www.youtube.com/watch?v=_buEFASNfjw",
+            "2. A Sunday Kind of Love - Etta James",
+                "- https://www.youtube.com/watch?v=kl0DehwApzE",
+            "3. Dream A Little Dream - The Mamas & The Papas",
+                "- https://www.youtube.com/watch?v=BHABfuMFpl0",
+            "4. Hypnotized - Fleetwood Mac",
+                "- https://www.youtube.com/watch?v=fDzXbdxeeHI",
+            "5. Cheek to Cheek - Fred Astaire",
+                "- https://www.youtube.com/watch?v=0QYdcHQXwdM",
+            "6. Paris City Jazz - Bellaire",
+                "- https://www.youtube.com/watch?v=YhHm0C8Jvmc"
+        ]
     }
 
-      # Apply the filters 
-      # IM SORRY BUT HOW DO I DO THIS??? 
-      # Copy dataset for filtering
-    filtered_songs = df_clean.copy()
+    # Display songs for selected mood
+    st.subheader(f"🎶 Songs for a '{mood_select}' Mood")
+    for song in mood_songs[mood_select]:
+        st.write(f"{song}")
+    
 
-    # Get filter settings for selected mood
-    filters = mood_filter[mood_select]
-
-    # Apply each feature range filter
-    for feature, (low, high) in filters.items():
-        column_name = feature.title()  # Match df_clean column names (title case)
-        if column_name in filtered_songs.columns:
-            filtered_songs = filtered_songs[
-                (filtered_songs[column_name] >= low) & (filtered_songs[column_name] <= high)
-            ]
-        else:
-            st.warning(f"Feature '{feature}' not found in dataset columns.")
-
-    # Show results
-    st.subheader(f"🎶 Songs that match your '{mood_select}' mood")
-    if not filtered_songs.empty:
-        st.dataframe(filtered_songs[["Track Name", "Artists", "Track Genre"]].head(10))
-    else:
-        st.write("😢 No songs match the filter criteria for this mood.")
-
-
-
+    
 # Tab 4 - About
 ## QUESTION WHY CAN'T THE PHOTOS BE ENTERED IN WHAT
 with tab4:
