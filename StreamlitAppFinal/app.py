@@ -45,7 +45,7 @@ with tab1:
     st.header("Let's Look At The Data 👨‍💻")
     st.subheader("What are people listening to? 🤷‍♀️")
     st.write(" With millions of songs out there, it is almost impossible to try and figure out what to listen to. " \
-    "So, let me help you out a little! Below find a data set with thousands of the most popular songs on Spotify. This way if you are unsure what you want to play, " \
+    "So, let me help you out a little! Below find a dataset with thousands of the most popular songs on Spotify. This way if you are unsure what you want to play, " \
     "you can just look below! Also, if you are trying to find a specific artist, genre, song, tempo, or popularity, use the filter " \
     "program to zone in on your search. While looking, please keep in mind that there are so so many songs out in the world, and this data set might not have everything, " \
     "BUT it can sure give you a good idea of what you can listen to." \
@@ -292,8 +292,8 @@ with tab2:
 # Tab 3 - Recomendations (Based on mood you should listen to ...)
 with tab3:
     st.header("🎵 Music Recommendation ")
-    st.write("So, don't forget your what mood you were given based on your quiz OR what you're feeling right now! Below find some" \
-    "peramiters that you can use to zone in on what kind of music you want to hear. Simply follow the BLHA BLAH BLAH BLAH")
+    st.write("Below, input the mood which you received in the previous tab and get some recommendations for songs" \
+    "which would go perfectly with the mood! Simply select your mood below.")
 
     # What is the mood score that the audience recived
     st.subheader(" Select Which Mood You Recived in Tab Two")
@@ -384,8 +384,9 @@ with tab3:
 ## QUESTION WHY CAN'T THE PHOTOS BE ENTERED IN WHAT
 with tab4:
     st.header(" ℹ️ About")
-    st.write("This app was built to help user find new music based off their mood. I wanted to try and create an app which " \
+    st.write("This app was built to help user find new music based on their mood. I wanted to try and create an app which " \
     "would allow for user to branch out, listening to something new or find the best vibe. I personally am a huge music fan and need music" \
     "every moment of every day in order to be productive. So now, when I am not sure what I should listen to " \
     "I am going to open this app to help me out. 🤗🎻")
     st.subheader("Below find some of my personal favorites 🫶🏻")
+    ## HOW DO I INPUT PHOTOS
