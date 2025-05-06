@@ -388,5 +388,7 @@ with tab4:
     "would allow for user to branch out, listening to something new or find the best vibe. I personally am a huge music fan and need music" \
     "every moment of every day in order to be productive. So now, when I am not sure what I should listen to " \
     "I am going to open this app to help me out. 🤗🎻")
-    st.subheader("Below find some of my personal favorites 🫶🏻")
-    ## HOW DO I INPUT PHOTOS
+    st.subheader("Below find some of my personal favorites on my spotify playlist 🫶🏻")
+    st.write("Below Find my Playlist Links")
+    st.write("1. https://open.spotify.com/playlist/4Htky418SJdV8wSEuB8qlC?si=37571108c42f4d45")
+    st.write("2. https://open.spotify.com/playlist/3dVbfPEuEJSWuGKBUd5Vys?si=63300daabccd4764")
