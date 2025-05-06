@@ -288,7 +288,6 @@ with tab2:
         detected_mood = max(mood_scores, key=mood_scores.get)
 
         st.subheader(f"Listen to music that follows a {detected_mood} vibe!")
-    st.write(mood_scores)
 
 # Tab 3 - Recomendations (Based on mood you should listen to ...)
 with tab3:
@@ -380,7 +379,6 @@ with tab3:
     for song in mood_songs[mood_select]:
         st.write(f"{song}")
     
-
     
 # Tab 4 - About
 ## QUESTION WHY CAN'T THE PHOTOS BE ENTERED IN WHAT
@@ -391,5 +389,3 @@ with tab4:
     "every moment of every day in order to be productive. So now, when I am not sure what I should listen to " \
     "I am going to open this app to help me out. 🤗🎻")
     st.subheader("Below find some of my personal favorites 🫶🏻")
-
-    st.write(" Nights - Frank Ocean ")
