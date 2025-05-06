@@ -8,9 +8,9 @@
 
 ### How To Instructions 📜
 It's simple! 
-1. Looking at recommendations in Tab 1, look at some songs that catch your eye 👀
-2. Take the "Mood Quiz" in Tab 2 📄
-3. Insert your mood in Tab 3, and find the best songs that fit you! 🎺
+**1.** Looking at recommendations in Tab 1, look at some songs that catch your eye 👀
+**2.** Take the "Mood Quiz" in Tab 2 📄
+**3.** Insert your mood in Tab 3, and find the best songs that fit you! 🎺
 
 ### Lets Look at Examples! 🫣
 ##### HOW DO I DOWNLOAD IMAGES #######
