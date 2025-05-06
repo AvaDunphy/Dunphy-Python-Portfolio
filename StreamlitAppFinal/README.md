@@ -1,7 +1,7 @@
 # Whats Your Jam? 🎶🎤
 
 ### Project Overview:
-
+This project touches on a variety of skills. Through the use of spaCy and streamlit, as well as a variety of pythons functions, I clean data, create quizes, and improve interaction between data and users. More specficlly, this app allows for users to better look at music data, analyzing what makes songs different, such as tempo, loudness, energy, ect, and how that then feeds into ones mood/vibe. The app accomplishes this by allowing users to take a quiz, find their mood, and then find songs that fit perfectly with the mood. Overall, through this app I really wanted to allow for interaction with users, and add a touch of fun to discovering new music! 
 
 ### How to Launch the App 🚀
 ###### HOW DO I UPLOAD IMAGES ######
