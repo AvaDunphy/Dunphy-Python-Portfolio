@@ -16,3 +16,7 @@ In this project, I tied together my knowledge and understanding of entities, and
 
 
 Skills: Usage of spaCy & Streamlit. 
+
+
+## [What's Your Jam?](https://github.com/AvaDunphy/Dunphy-Python-Portfolio/tree/main/StreamlitAppFinal)
+## Whats Your Jam? 🎷

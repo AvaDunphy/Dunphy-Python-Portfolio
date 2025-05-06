@@ -1,4 +1,6 @@
-# Whats Your Jam? 🎶🎤 Project Overview:
+# Whats Your Jam? 🎶🎤
+
+### Project Overview:
 
 
 ### How to Launch the App 🚀
