@@ -53,7 +53,7 @@ with tab1:
     "Thank you! And sit back, relax, and enjoy some good music 🫶🏻")
 
     # First, inputting the data set into the machine
-    csv_path = "/Users/avadunphy/Documents/Dunphy-Python-Portfolio/StreamlitAppFinal/musicdataset.csv"
+    csv_path = "StreamlitAppFinal/musicdataset.csv"
     df = pd.read_csv(csv_path)
     # Second, making some titles
     st.subheader("🎵 Spotify Data Preview")
