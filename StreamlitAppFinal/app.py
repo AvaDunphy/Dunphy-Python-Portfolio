@@ -35,13 +35,14 @@ st.markdown("""
 3️⃣ Then insert your mood into tab 3 and get fast reliable recommendations! 
 """)
 
-#Organize the Tabs on the app, different tabs. 
+#Organize the Tabs on the app, different tabs and labeling the tabs. 
 tab1, tab2, tab3, tab4 = st.tabs(["📊 Music Data", "📝 Take Mood Quiz", "🎶 Music Recommendations", "ℹ️ About This App"])
 
 # TAB BY TAB BREAK DOWN 
 
 # Tab 1 - Data Table For Research 
 with tab1:
+    # Small write up about what the tab is trying to accomplish
     st.header("Let's Look At The Data 👨‍💻")
     st.subheader("What are people listening to? 🤷‍♀️")
     st.write(" With millions of songs out there, it is almost impossible to try and figure out what to listen to. " \
@@ -58,23 +59,20 @@ with tab1:
     st.subheader("🎵 Spotify Data Preview")
     st.write("Below find the cleaned up data set with thousands of songs! 🎷 ")
 
-    # Third, Let's clean up the data set a little bit
+    # Third, Let's clean up the data set a little bit using df.drop and .replace
     df_clean = df.drop(columns=['track_id', 'duration_ms', "Unnamed: 0"]) # This line allows me to drop some files that I didn't want showing
     df_clean.columns = df_clean.columns.str.replace('_', ' ', regex=False).str.title() # This makes the titles a little more clean with no "_"
     st.dataframe(df_clean)
 
-    # Fourth, lets add some stuff
-
-    # 🔍 Add Filter Options
+    # Fourth, lets add some option for the data
+    # Add Filter Options
     st.subheader("🔎 Filter the Music Data")
 
-    
-
-    # Create sidebar or expandable filters if needed
+    # Create sidebar or expandable filters if needed so that they can narrow down what they want to see through selectbox
     filter_by = st.selectbox("Choose what you'd like to filter by:", 
                              ["None", "Track Genre", "Artist", "Popularity", "Tempo", "Energy", "Instrumentalness", "Valence", "Liveness", "Acousticness", "Speechiness", "Loudness", "Danceability"])
 
-    # Apply selected filter
+    # Apply selected filter & alter based on filter and range of filter (ex Temp has differnt range than Popularity)
     if filter_by == "Track Genre":
         genres = df_clean['Track Genre'].dropna().unique()
         selected_genre = st.selectbox("Select a genre:", sorted(genres))
@@ -99,7 +97,7 @@ with tab1:
     elif filter_by == "Tempo":
         min_tempo = float(df_clean['Tempo'].min())
         max_tempo = float(df_clean['Tempo'].max())
-        selected_tempo = st.slider("Select tempo range:", float(min_tempo), float(max_tempo), (90.0, 130.0))
+        selected_tempo = st.slider("Select tempo range:", float(min_tempo), float(max_tempo), (00.0, 247.37))
         filtered_df = df_clean[
             (df_clean['Tempo'] >= selected_tempo[0]) & (df_clean['Tempo'] <= selected_tempo[1])
         ]
@@ -185,6 +183,7 @@ with tab2:
     st.header("📝 Mood Quiz")
     st.write("Let's take a look at what kind of mood you're feeling right now")
     
+    #Establish the inital mood scores for the quiz
     mood_scores = { 
         "Happy" : 0, 
         "Sad" : 0, 
@@ -193,6 +192,7 @@ with tab2:
         "Quiet" : 0
     }
 
+    # Each question adds up the answers for each equation (similar to Computing I)
     # -- Question 1 -- 
     st.markdown("#### **1.Okay whats the plan for the next couple of hours?**")
     Question_one = st.radio(
@@ -299,6 +299,7 @@ with tab3:
     st.subheader(" Select Which Mood You Recived in Tab Two")
     mood_select = st.selectbox("Choose Your Mood:", ["Excited", "Chill", "Happy", "Sad", "Quiet"])
 
+    # Based on what mood are you feeling, you should listen to this song, simple list and markdown
     mood_songs = { 
         "Happy":[
             "1. Dancing Queen - Abba",
@@ -351,7 +352,7 @@ with tab3:
                 "- https://www.youtube.com/watch?v=Dlz_XHeUUis",
             "3. Heart to Heart - Mac DeMarco",
                 "- https://www.youtube.com/watch?v=qBoQzo98EpQ",
-            "4. If This World Were Mine - Luther Vandross," 
+            "4. If This World Were Mine - Luther Vandross" ,
                 "- https://www.youtube.com/watch?v=RkFIkubuYns",
             "5. ROS - Mac Miller",
                 "- https://www.youtube.com/watch?v=-2AfeMnpiRI",
