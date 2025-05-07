@@ -18,13 +18,4 @@ In this project, I looked at the 2008 Olympic Medalist data. Though the data was
 
 ## [Name Entity Project!](https://github.com/AvaDunphy/Dunphy-Python-Portfolio/tree/main/NERStreamlitApp) 👋
 ## NER 📸
-In this project, I tied together my knowledge and understanding of entities, and the combinations of Python, spaCy, and Streamlit, to develop a Named Entity Recognition application. Through this app, I can allow users to upload text, data, html files, etc, and view their highlighted entities (which I deemed variable in my personal entity labels/rules). This way, I am able to recognize key features of users’ uploads, as well as bring attention to any particular issue areas of the text/data. This project allowed me to improve my Python abilities, and begin the process of deciding what I want to do with my code. The freedom of this project allowed me to develop my own rules and guidelines, pushing my creativity and coding ability.
-
-### Let's Take a Peak
-
-
-## [What's Your Jam?](https://github.com/AvaDunphy/Dunphy-Python-Portfolio/tree/main/StreamlitAppFinal)
-## Final Project 🎷
-In this project, I tied together the various techniques I learned throughout the semester to find data, upload it to GitHub, clean it up, create interaction opportunities, and more. This project really tested my skills, improving my ability to use spaCy and Streamlit, and create a more interactive and exciting project. Through this project, users can look at different types of songs and can narrow them down based on track genres, artists, loudness, tempo, speechiness, etc. Additionally, if they are unsure what kind of mood they are in and what songs they should listen to, they have the chance to take a mood quiz and then be given 6 songs assoicated with that mood. Additionally, the app provides YouTube links to each song for easy access. Overall, this apps allows an easy and fun way to discover new music on their own terms. 
-
-### Let's Take a Peak 
+In this project, I tied together my knowledge and understanding of entities, and the combinations of Python, spaCy, and Streamlit, to develop a Named Entity Recognition application. Through this app, I can allow users to upload text, data, html files, etc, and view their highlighted entities (which I deemed variable in my personal entity labels/rules). This way, I am able to recognize key features of users’ uploads, as well as bring attention to any particular issue areas of the text/data. This project allowed me to improve my Python abilities, and begin the process of deciding what I want to do with my code. The freedom of this project allowed me to develop my own rules and guidelines, pushing my creativity and coding 
