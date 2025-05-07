@@ -394,5 +394,5 @@ with tab4:
     "I am going to open this app to help me out. 🤗🎻")
     st.subheader("Below find some of my personal favorites on my spotify playlist 🫶🏻")
     st.write("Below Find my Playlist Links")
-    st.write("1. [For A Slow Morning](https://open.spotify.com/playlist/4Htky418SJdV8wSEuB8qlC?si=37571108c42f4d45)")
-    st.write("2. [For A Long Drive](https://open.spotify.com/playlist/3dVbfPEuEJSWuGKBUd5Vys?si=63300daabccd4764)")
+    st.write("1. [For A Long Drive](https://open.spotify.com/playlist/4Htky418SJdV8wSEuB8qlC?si=37571108c42f4d45)")
+    st.write("2. [A Slow Morning](https://open.spotify.com/playlist/7dQHCpjlaDHu4tnqMqVEvZ?si=0b6b8002c9c8411f)")
