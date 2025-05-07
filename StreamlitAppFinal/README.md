@@ -12,7 +12,7 @@ Link ➡️ [Whats Your Jam?]() 🎧
 ###### HOW DO I UPLOAD IMAGES ######
 
 ## **Step By Step 1️⃣2️⃣3️⃣**
-It's simple! 
+Don't know what to do in the app? It's simple, look below!
 
 **1.** Looking at recommendations in **Tab 1**, look at some songs that catch your eye 👀
 
