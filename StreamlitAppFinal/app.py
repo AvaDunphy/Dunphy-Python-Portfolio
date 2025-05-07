@@ -73,6 +73,7 @@ with tab1:
                              ["None", "Track Genre", "Artist", "Popularity", "Tempo", "Energy", "Instrumentalness", "Valence", "Liveness", "Acousticness", "Speechiness", "Loudness", "Danceability"])
 
     # Apply selected filter & alter based on filter and range of filter (ex Temp has differnt range than Popularity)
+    # The code remains some what the same throughout, showing the different filters and the ranges, but they all come from the same data set
     if filter_by == "Track Genre":
         genres = df_clean['Track Genre'].dropna().unique()
         selected_genre = st.selectbox("Select a genre:", sorted(genres))
@@ -376,6 +377,7 @@ with tab3:
     }
 
     # Display songs for selected mood
+    # Associating what mood and what songs you should then listen to. 
     st.subheader(f"🎶 Songs for a '{mood_select}' Mood")
     for song in mood_songs[mood_select]:
         st.write(f"{song}")
@@ -383,6 +385,7 @@ with tab3:
     
 # Tab 4 - About
 ## QUESTION WHY CAN'T THE PHOTOS BE ENTERED IN WHAT
+# Small write up
 with tab4:
     st.header(" ℹ️ About")
     st.write("This app was built to help user find new music based on their mood. I wanted to try and create an app which " \
@@ -391,5 +394,5 @@ with tab4:
     "I am going to open this app to help me out. 🤗🎻")
     st.subheader("Below find some of my personal favorites on my spotify playlist 🫶🏻")
     st.write("Below Find my Playlist Links")
-    st.write("1. https://open.spotify.com/playlist/4Htky418SJdV8wSEuB8qlC?si=37571108c42f4d45")
-    st.write("2. https://open.spotify.com/playlist/3dVbfPEuEJSWuGKBUd5Vys?si=63300daabccd4764")
+    st.write("1. [For A Slow Morning](https://open.spotify.com/playlist/4Htky418SJdV8wSEuB8qlC?si=37571108c42f4d45)")
+    st.write("2. [For A Long Drive](https://open.spotify.com/playlist/3dVbfPEuEJSWuGKBUd5Vys?si=63300daabccd4764)")
