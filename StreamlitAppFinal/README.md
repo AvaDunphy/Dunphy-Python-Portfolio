@@ -29,9 +29,9 @@ It's simple!
 
 ### **Lets Look at Examples! 🫣**
 ##### HOW DO I DOWNLOAD IMAGES #######
-Below find an image that depicts the Mood Quiz, and some results you could get:
+☉ Below find an image that depicts the Mood Quiz, and some results you could get:
 
-Below find some results I could get based off of my mood:
+☉ Below find some results I could get based off of my mood:
 
 ### **References 🔍**
 This app looks at tens of thousands of songs, which is a ton of data. In order to find that data, Kaggle was an incredible help! Below is the Spotify Track Data site, which I input, allowing me to look at different songs and provide music for the audience.
