@@ -35,6 +35,7 @@ It's simple!
 
 ## **References 🔍**
 - [🎧 Spotify Tracks Dataset by Maharshi Pandya on Kaggle](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)
+
 This app looks at tens of thousands of songs, which is a ton of data. In order to find that data, Kaggle was an incredible help! Below is the Spotify Track Data site, which I input, allowing me to look at different songs and provide music for the audience.
 
 
@@ -42,4 +43,5 @@ This app looks at tens of thousands of songs, which is a ton of data. In order t
 Below are some resources I found that helped me during this project!
 
 - [Real Python 👩‍💻](https://realpython.com/python-quiz-application/)
+
 When I was trying to create my mini mood quiz, I was at a bit of a loss where to start. However, by reading Real Python’s "Build a Quiz Application With Python," I was able to learn a little more. It provided a good building foundation on which I could build my own quiz. It also provided some good context for any other quizzes I might be interested in doing in the future!
