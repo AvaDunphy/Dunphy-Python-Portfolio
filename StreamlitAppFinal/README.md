@@ -8,7 +8,7 @@ This project touches on a variety of skills. Through the use of spaCy and stream
 
 ## **Let's Launch the App 🚀**
 
-Link ➡️ [Whats Your Jam?]() 🎧
+Link ➡️ [Whats Your Jam?](https://avadunphy-dunphy-python-portfolio-streamlitappfinalapp-7iwior.streamlit.app/) 🎧
 
 ###### HOW DO I UPLOAD IMAGES ######
 
