@@ -21,7 +21,7 @@ It's simple!
 **3.** Insert your mood in **Tab 3**, and find the best songs that fit you! 🎺
 
 ### In This App, You Will Find... 🧭
-## App Features 
+#### App Features 
 * spaCy 
 * Streamlit 
 * Dictionaries 
