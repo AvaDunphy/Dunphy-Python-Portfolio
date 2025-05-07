@@ -304,4 +304,92 @@ with tab3:
         "Happy":[
             "1. Dancing Queen - Abba",
                 "- https://www.youtube.com/watch?v=xFrGuyw1V8s",
-            "
+            "2. Lovely Day - Bill Withers",
+                "- https://www.youtube.com/watch?v=bEeaS6fuUoA",
+            "3. Don't Stop Me Now - Queen",
+                "- https://www.youtube.com/watch?v=HgzGwKwLmgM",
+            "4. Don't Worry, Be Happy - Bobby McFerrin",
+                "- https://www.youtube.com/watch?v=d-diB65scQU",
+            "5. Good Vibrations - Beach Boys",
+                "- https://www.youtube.com/watch?v=apBWI6xrbLY",
+            "6. Unwritten - Natasha Bedingfield",
+                "- https://www.youtube.com/watch?v=b7k0a5hYnSI"
+
+        ],
+        "Excited":[
+            "1. Paper Planes - M.I.A",
+                "- https://www.youtube.com/watch?v=ewRjZoRtu0Y",
+            "2. Empire State of Mind - Jay Z and Alicia Keys",
+                "- https://www.youtube.com/watch?v=tqKWshKUC5E",
+            "3. Doses & Mimosas - Cherub",
+                "- https://www.youtube.com/watch?v=E45fogGN_Y8",
+            "4. I'm So Excited - The Pointer Sisters",
+                "- https://www.youtube.com/watch?v=rQqwG_rQx7A",
+            "5. I Gotta Feeling - The Black Eyed Peas",
+                "- https://www.youtube.com/watch?v=ipii7KbbJLY",
+            "6. Shake It Off - Taylor Swift",
+                "- https://www.youtube.com/watch?v=mvVBuG4IOW4"
+
+        ],
+        "Chill" :[
+            "1. Time Moves Slow - BADBADNOTGOOD",
+                "- https://www.youtube.com/watch?v=UWIIPX_5rbM",
+            "2. Blondie - Current Joys",
+                "- https://www.youtube.com/watch?v=-dFHXd1dTSk",
+            "3. My Kind of Woman - Mac DeMarco",
+                "- https://www.youtube.com/watch?v=_R3B2Xr8kwQ",
+            "4. Tommy's Party - Peach Pit",
+                "- https://www.youtube.com/watch?v=iMUbmiXlHww"
+            "5. Bad Habit - Steve Lacy",
+                "- https://www.youtube.com/watch?v=S2PVsv2K1Bg"
+            "6. Today - Q",
+                "- https://www.youtube.com/watch?v=rzh7Fjm_IpI"
+        ],
+        "Sad" :[
+            "1. Looking Out for You - Joy Again",
+                "- https://www.youtube.com/watch?v=ZVQDHFgfssM",
+            "2. White Ferrari - Frank Ocean",
+                "- https://www.youtube.com/watch?v=Dlz_XHeUUis",
+            "3. Heart to Heart - Mac DeMarco",
+                "- https://www.youtube.com/watch?v=qBoQzo98EpQ",
+            "4. If This World Were Mine - Luther Vandross" ,
+                "- https://www.youtube.com/watch?v=RkFIkubuYns",
+            "5. ROS - Mac Miller",
+                "- https://www.youtube.com/watch?v=-2AfeMnpiRI",
+            "6. Blind - Sza",
+                "- https://www.youtube.com/watch?v=SZbTfC85nVk"
+        ],
+        "Quiet" :[
+            "1. Comming Home - Leaon Bridges",
+                "- https://www.youtube.com/watch?v=_buEFASNfjw",
+            "2. A Sunday Kind of Love - Etta James",
+                "- https://www.youtube.com/watch?v=kl0DehwApzE",
+            "3. Dream A Little Dream - The Mamas & The Papas",
+                "- https://www.youtube.com/watch?v=BHABfuMFpl0",
+            "4. Hypnotized - Fleetwood Mac",
+                "- https://www.youtube.com/watch?v=fDzXbdxeeHI",
+            "5. Cheek to Cheek - Fred Astaire",
+                "- https://www.youtube.com/watch?v=0QYdcHQXwdM",
+            "6. Paris City Jazz - Bellaire",
+                "- https://www.youtube.com/watch?v=YhHm0C8Jvmc"
+        ]
+    }
+
+    # Display songs for selected mood
+    st.subheader(f"🎶 Songs for a '{mood_select}' Mood")
+    for song in mood_songs[mood_select]:
+        st.write(f"{song}")
+    
+    
+# Tab 4 - About
+## QUESTION WHY CAN'T THE PHOTOS BE ENTERED IN WHAT
+with tab4:
+    st.header(" ℹ️ About")
+    st.write("This app was built to help user find new music based on their mood. I wanted to try and create an app which " \
+    "would allow for user to branch out, listening to something new or find the best vibe. I personally am a huge music fan and need music" \
+    "every moment of every day in order to be productive. So now, when I am not sure what I should listen to " \
+    "I am going to open this app to help me out. 🤗🎻")
+    st.subheader("Below find some of my personal favorites on my spotify playlist 🫶🏻")
+    st.write("Below Find my Playlist Links")
+    st.write("1. https://open.spotify.com/playlist/4Htky418SJdV8wSEuB8qlC?si=37571108c42f4d45")
+    st.write("2. https://open.spotify.com/playlist/3dVbfPEuEJSWuGKBUd5Vys?si=63300daabccd4764")
