@@ -9,6 +9,8 @@ Skills: Python, R-Studio, spaCy, Streamlit
 ## 2008 Olympics Data Clean 🏆🧗‍♀️🏂
 In this project, I looked at the 2008 Olympic Medalist data. Though the data was quite interesting and provided a significant amount of information regarding which athletes competed, if they received medals, and/or what medals they did receive, the information was not organized. It would've been difficult to find more specific pieces of the data or simply gain a better holistic understanding. In this project, I used techniques such as ".melt(), "str.split()", or "str.replace()" to better organize the data and make it more presentable. In addition to this, I used a bar, a histogram, and a heat graph plot to create visualizations of the data, once again making it easier on the eye. Finally, I created a pivot plot, which allowed me to compare different aspects of the data, looking closer at specific values and groups. Overall, this whole project taught me how to dive deeper into data sheets, restructure them, and improve their visual appeal. 
 
+### Let's Take a Peak
+
 
 ## [Name Entity Project!](https://github.com/AvaDunphy/Dunphy-Python-Portfolio/tree/main/NERStreamlitApp) 👋
 ## NER 📸
@@ -17,6 +19,11 @@ In this project, I tied together my knowledge and understanding of entities, and
 
 Skills: Usage of spaCy & Streamlit. 
 
+### Let's Take a Peak
+
 
 ## [What's Your Jam?](https://github.com/AvaDunphy/Dunphy-Python-Portfolio/tree/main/StreamlitAppFinal)
-## Whats Your Jam? 🎷
+## Final Project 🎷
+In this project, I tied together the various techqiues I learned throughout the semester to find data, upload it to GitHub, clean it up, create interaction opprotunities, and more. This project really tested my skills, improving my ablity to use spaCy and Streamlit, and creating a more interactive and exciting project. Through this project, users are able to look at different types of songs and can narrow them down based on tracks genres, artistis, loudness, tempo, speachiness, ect. Additionally, if they are unsure what kind of mood they are in, and what songs they should listen to, the have the chance to take a mood quiz. The time five question quiz, predicts what kind of mood they are in, and then gives 6 songs which they should listen to. Additionally, the app provides youtube links to each song, for easy access. Overall, the app is a fun and easy way to discover new music. 
+
+### Let's Take a Peak 
