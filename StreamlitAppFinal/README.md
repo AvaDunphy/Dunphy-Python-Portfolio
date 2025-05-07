@@ -22,10 +22,10 @@ It's simple!
 
 ### In This App, You Will Find... 🧭
 #### App Features 
-* spaCy 
-* Streamlit 
-* Dictionaries 
-* File Uploads
+* **spaCy** 
+* **Streamlit** 
+* **Dictionaries** 
+* **File Uploads**
 
 ### Lets Look at Examples! 🫣
 ##### HOW DO I DOWNLOAD IMAGES #######
