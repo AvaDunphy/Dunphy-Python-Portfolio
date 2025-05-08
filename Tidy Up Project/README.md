@@ -24,7 +24,7 @@ Firstly, I created the proper paths in my notebook so I could have access to the
 After, I decided to merge the second datasheet, allowing me to have more access to different data. More specifically, I was interested in looking at the medalist’s country data. Therefore, I made use of the .merge argument, allowing me to not only merge the data sheets but also allowing for me to select which specific columns I wanted to have in my final datasheet.
 
 
-## Step Three 🥉 - Upload Visualizations (Hisograms)
+## Step Three 🥉 - Upload Visualizations (Histograms)
 
 To provide more context to the data set, I included two visualizations of the datasheet. Firstly, I used a histogram to depict the distribution of medal counts between females and males. This way I can get a good look at what kinds of medals males and females got, and how they compare to one another. However, I noticed that there were more medals awarded to women instead of men, so I decided to add a bar graph to look at the events and the genders. From this I learned that females compete in four more events than males do, thus providing evidence for the difference in the number of medals awarded to each gender.
 
