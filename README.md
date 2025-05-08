@@ -20,7 +20,7 @@ Skills: Python
 <img src="https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/Tidy_Up.png" width="250">
 
 
-## [Name Entity Project!](https://github.com/AvaDunphy/Dunphy-Python-Portfolio/tree/main/NERStreamlitApp) 👋
+## [Named Entity Project!](https://github.com/AvaDunphy/Dunphy-Python-Portfolio/tree/main/NERStreamlitApp) 👋
 ### NER 📸
 In this project, I tied together my knowledge and understanding of entities, and the combinations of Python, spaCy, and Streamlit, to develop a Named Entity Recognition application. Through this app, I can allow users to upload text, data, html files, etc, and view their highlighted entities (which I deemed variable in my personal entity labels/rules). This way, I am able to recognize key features of users’ uploads, as well as bring attention to any particular issue areas of the text/data. This project allowed me to improve my Python abilities, and begin the process of deciding what I want to do with my code. The freedom of this project allowed me to develop my own rules and guidelines, pushing my creativity and coding ability.
 
