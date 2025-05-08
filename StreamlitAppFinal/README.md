@@ -26,11 +26,12 @@ Don't know what to do in the app? It's simple, look below!
 * **File Uploads**
 
 ## **Lets Look at Examples! 🫣**
-☉ Below find an image that depicts the Mood Quiz, and some results you could get:
+**☉ Below find an image that depicts the Mood Quiz, and some results you could get:**
 <img src="https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/mood_quiz_github.png" alt="Mood Quiz" width="300">
 
-☉ Below find some results I could get based off of my mood:
-<img src="https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/result_of_mood.png" alt="Mood Results" width="300">
+
+**☉ Below find some results I could get based off of my mood:**
+<img src="https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/Result_of_Mood2.png" alt="Mood Results" width="300">
 
 
 ## **References 🔍**
