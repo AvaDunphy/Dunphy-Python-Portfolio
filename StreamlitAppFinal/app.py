@@ -215,10 +215,10 @@ with tab2:
     st.markdown("#### **2.What are we drinking right now?**")
     Question_two = st.radio(
         "",
-        ("🍸" , "Tea & Honey 🫖", "Coffee ☕️", "Water 💧", "Milkshake 🥤")
+        ("🥂" , "Tea & Honey 🫖", "Coffee ☕️", "Water 💧", "Milkshake 🥤")
     )
 
-    if Question_two == "🍸":
+    if Question_two == "🥂":
         mood_scores["Excited"] += 1 
     elif Question_two == "Tea & Honey 🫖":
         mood_scores["Chill"] +=  1
