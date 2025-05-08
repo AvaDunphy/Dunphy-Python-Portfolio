@@ -27,10 +27,11 @@ Don't know what to do in the app? It's simple, look below!
 
 ## **Lets Look at Examples! 🫣**
 ☉ Below find an image that depicts the Mood Quiz, and some results you could get:
-![image](https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/mood_quiz_github.png)
+<img src="https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/mood_quiz_github.png" alt="Mood Quiz" width="300">
 
 ☉ Below find some results I could get based off of my mood:
-![image](https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/result_of_mood.png)
+<img src="https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/result_of_mood.png" alt="Mood Results" width="300">
+
 
 ## **References 🔍**
 - [🎧 Spotify Tracks Dataset by Maharshi Pandya on Kaggle](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)
