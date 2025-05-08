@@ -3,7 +3,7 @@
 ## **Project Overview 📖📋:**
 This project touches on a variety of skills. Through the use of spaCy and streamlit, as well as a variety of Python functions, I clean data, create quizzes, and improve interaction between data and users. More specifically, this app allows users to better look at music data, analyzing what makes songs different, such as tempo, loudness, energy, etc., and how that then feeds into one’s mood/vibe. The app accomplishes this by allowing users to take a quiz, find their mood, and then find songs that fit perfectly with the mood. Overall, through this app, I really wanted to allow for interaction with users and data as well as add a touch of fun to discovering new music! 
 
-![image](https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/photo6_github.png)
+<img src="https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/photo6_githu.png" alt="Mood Results" width="250">
 
 ## **Let's Launch the App 🚀**
 
@@ -27,11 +27,11 @@ Don't know what to do in the app? It's simple, look below!
 
 ## **Lets Look at Examples! 🫣**
 **☉ Below find an image that depicts the Mood Quiz, and some results you could get:**
-<img src="https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/Result_of_Mood2.png" alt="Mood Quiz" width="300">
+<img src="https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/Result_of_Mood2.png" alt="Mood Quiz" width="250">
 
 
 **☉ Below find some results I could get based off of my mood:**
-<img src="https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/result_of_mood.png" alt="Mood Results" width="300">
+<img src="https://github.com/AvaDunphy/Dunphy-Python-Portfolio/blob/main/assets/result_of_mood.png" alt="Mood Results" width="250">
 
 
 ## **References 🔍**
